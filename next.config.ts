@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  transpilePackages: ["pixel-retroui", "three"],
+  turbopack: {},
 };
 
 export default nextConfig;

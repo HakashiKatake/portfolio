@@ -1,0 +1,457 @@
+Sky racer | mobile game |
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7215980709327343616-UwmH
+
+SkyRacer 🎮 My first project is SkyRacer, a thrilling game where you navigate a car through a 3D space with narrow roads. By tapping the screen, you can change the direction of the car from left to right as the road changes. It's a test of quick reflexes and precise timing! (I got this game idea from a game called zigzag from Playstore!)
+
+-New concepts and Challenges, I faced while making the game:
+ -Concepts:
+ ● Unity's 3D camera movement and smooth player follow.
+ ● HighScore system using Unity's PlayerPrefs storage system for local devices. 
+ ● Audio and SFX management in Unity and playing them when needed!
+ ● Infinite platfrom generation for a gameplay loop.
+ ● 3d models and animations!
+
+-Challenges:
+ ● The infinite platform generation sure took time to figure out but, I did it eventually 
+ ● 3D models were a big obstacle in this journey 
+ ● Ahh! Don't get me started on the Unity's Particle System 😐 
+
+What new mechanics, I implemented in SkyRacer that were not in zigzag?
+-first of all, when i first played the zigzag game it felt sluggish and not responsive on the taps! It can become annoying. I fixed that in my own recreation.
+-second, I added automatically changing background after a certain interval.
+-the car's speed increases as we reach certain score.
+-animated diamonds (collectables) 
+-terrain gets harder as we progress more.
+
+Fast ball | mobile 
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7216440560025255936-vl3h
+
+Fast Ball 🎮 is one of those minimalistic hypercasual game, where main focus is on the gameplay part not on the artistic part. Growing up this genre was one of my favs! FastBall is very simple game in which the score increases as we touch the certain platform and if we collide with the enemies the player dies!
+
+-New concepts and Challenges, I faced while making the game:
+ -Concepts:
+ ● Evoking Particles on object destroy.
+ ● Text animation in Unity.
+ ● SceneManagement in Unity.
+
+-Challenges:
+ ● The particle effect was really a challenge to make, but eventually got hang of it!
+ ● Spawning enemies after certain intervals, so that the player's experience is not compromised.
+
+What new mechanics, I implemented in FastBall ?
+Main Menu with SceneManagement, added disabling audio option and back to main menu button & quit button in home screen.
+
+
+TheFishMaster | Mobile 
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7216825573266927618-q362
+
+TheFishMaster 🎮 is the type of game which was part of my childhood and behind, My love towards hypercasual genre! its one of those fishing game, where the hook is fished for the certain length and it catches fishes as it comes back to the player!
+
+-New concepts and Challenges, I faced while making the game:
+ -Concepts:
+ ● Dragging mechanism 
+ ● Scrolling for the hook mechanism
+ ● Spawning fishes at different level of water
+ ● Idle earning mechanism!
+
+-Challenges:
+ ● The dragging mechanism in mobile was sure a task, but eventually it was made easy
+ ● Ah! the fish spawn at different levels was the thing that took this post so much time to come :/
+ ● Idle earning mechanism is something, new for me using Unity's library
+
+Collect it | mobile
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7217208371249090560-Ykz4
+
+Collect It!🎮 is the simplest game, i have made so far and that too in hypercasual category! The basic concept of the game is collecting the blobs, that refills your energy bar but, the bar is depleting gradually in order to be alive you have to consume those blobs!
+
+-New concepts and Challenges, I faced while making the game:
+ -Concepts:
+ ● Touch to move mechanism 
+ ● Random spawning of blobs 
+ ● Depleting bar with the time!
+ ● Screen Restrictions & player bounce
+
+-Challenges:
+ ● Basically, there weren't really any challenge today, while making it since , I reused alot of assets!
+ ● Yes, the player bounce and restrictions took time!
+
+Shinobi Runner | Mobile
+Shinobi Runner 🏃 a fan game based on Naruto, in this game there are two main characters that, we control there are kunai knifes coming at both the characters in splitscreen. The players have to dodge them by clicking the screen both the sides, if one dies the game is over!
+
+-New concepts and Challenges, I faced while making the game:
+ -Concepts:
+ ● Touch based on the specific screen point..
+ ● Spawning kunai knifes infinitely.
+ ● Managing vector sprites in unity.
+ ● Responsive layout for any mobile screens.
+
+-Challenges:
+ ● The touch controls for both the players, really took time. The sole reason why this post is delayed
+ ● The spawning of kunai at specific distance and randomly
+ ● Colliders of both the players
+
+
+Shoot it | mobile game
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7217925216700682240-23HG
+Shoot it! this game falls in sports genre and i have soo many future plans for this game's development. Shoot it! is just a simple basket ball game, where you have to shoot the ball into the post and score increases, If you miss it, you lose a life! 3 lifes gone and you are out.
+
+-New concepts and Challenges, I faced while making the game:
+ -Concepts:
+ ● Drag and shoot method.
+ ● Basketball physics.
+ ● Audio on court hit or any specific hit sound.
+ ● Lives system and displaying it!
+ ● 2d Vector art management.
+
+-Challenges:
+ ● Tbh, The basket ball physics took me time to understand and how it works, I was following a tutorial and still it took me a long while!
+ ● The drag and shoot function was another hassle, but it was manageable compared to the basketball physics 
+ ● The 2d vector art management was a new challenge since it was something new for me.
+
+ This game is still incomplete, I will complete this game in future when the challenge is over and I will post about it's progress soon, I play on adding multiplayer in this game, you can compete with your friends and some more modes!
+
+
+Donkey Kong clone in unity | mobile game
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7218294902760062976-RdsH
+
+well this was is really special and part of almost everyone's childhood. I tried to recreate famous Donkey Kong game of Gameboy times! I think this game doesn't needs a introduction as it is very popular from almost decades. The idea of making DK as my final game was tough choice, questions started arising will, i be able to complete this in 1 day? Yes, and i sure did it, It was a great learning experience making this game coming to life again in unity! As this chapter wraps up, This journey was amazing. I learned, improvised & re-create so many things! As for the games, I promised to complete in future after the challenge, I will keep you all updated with their progress. Thanks.
+
+-New concepts and Challenges, I faced while making the game:
+ -Concepts:
+ ● Vertical climb 
+ ● Barrel physics 
+ ● Changing levels in unity
+ ● Using pixel art 
+ ● Animations and frameskip! 
+
+-Challenges:
+ ● Figuring out, how DK worked was really a task at first but, then I saw it's clever game design and understood 
+ ● Barrel physics was new and challenging 
+ ● Pixel art and frameskip was a hassle too!
+
+Hotshot | pc game/gamejam game 
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamejam-polymarsxscorespace-gamedev-activity-7223783393828732929-_Us1
+
+ recently had the exhilarating experience of participating in the Polymars x ScoreSpace Game Jam, a 3-day whirlwind of creativity, collaboration, and challenges. Landing in this journey with three incredible teammates – an artist, a sound designer, and a fellow programmer – we were all set to create something amazing.
+
+However, Day 1 threw us a curveball. Timezone differences meant we couldn't get any substantial work done. It was frustrating, but we regrouped and started fresh the next morning, determined to make up for the lost time.
+
+Day 2 was all about catching up. We completed our basic tasks and started working on the leader board system, a crucial part of our game. This task turned out to be more complex than anticipated, testing our problem-solving skills and patience. As the clock ticked down to the final minutes, we scrambled to polish the game and upload it. With just 10 minutes left, we hit the submit button, adrenaline pumping through our veins.
+
+The experience was intense but immensely rewarding. I learned several key lessons from this jam:
+1. Time Management: Effective planning is crucial, especially when working across different time zones.
+2. Team Collaboration: Clear communication and understanding of each teammate's strengths are vital for success.
+3. Problem-Solving Under Pressure: Handling unexpected challenges and finding quick solutions is an invaluable skill.
+
+playable link: https://henrylom.itch.io/hotshot
+
+Squishy Sophie | pc/game jam
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gmtkjam2024-gamedev-squishysophie-activity-7232060317302710272-rbI4
+🐱 Game Theme: Join Sophie, a determined cat, on a mission to reach the milk at the end of the room. Dodge hunting dogs, consume fishes to grow stronger, but beware of the wrong fish—they’ll shrink you! Watch out for deadly yarn balls that could eat you alive. Can Sophie make it to the milk in one piece?
+
+My role in this jam was a bit bigger than usual—balancing team management, programming, and some art tasks. It was a challenging but rewarding experience, and I'm proud of what we accomplished together.
+
+Our whole game jam journey:
+
+🎮 Day 1 (17th Aug): We started diving deep into the theme, "Built to Scale." Our initial idea was ambitious—allowing Sophie to squeeze and stretch by pressing W and S. However, as we got deeper into development, we realized time and bugs weren't in our favor. The tough decision was made to scrap that idea, but we kept pushing forward.
+
+🎮 Days 2 & 3 (18th-19th Aug): These days were all about hard work, crunch hours, and facing one challenge after another. Bugs were flying left and right, and at one point, a major bug forced us to ditch four levels entirely—it was either that or risk breaking the whole game. With less than an hour on the clock, we streamlined the game to just the working levels. My quick decision-making in that crucial moment, along with Ripozy and Henry's clutch efforts, kept us on track.
+
+⏰ Final Hour: The final hour was a whirlwind. We were scrambling to build the game, make last-minute changes, and then came the Itch.io submission issues. I genuinely thought we'd lost the jam, but in the final two minutes, Henry swooped in and saved the day with the submission. The relief and joy were indescribable—what a rollercoaster!
+
+💡 What I Learned:
+Managing a Bigger Team: Keeping everyone in the loop and regularly checking progress is key to ensuring that the project stays on track.
+
+Programming: If a feature takes more than a day or half to code, just ditch it and think of another idea—it’s all about being agile and adaptable.
+
+Art: If you're using Aseprite, man, the square tool is a lifesaver! It saved me so much time during this jam.
+
+playable link : https://henrylom.itch.io/squishy-sophie
+
+Learning godot | personal project 
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-godot-learning-activity-7234254866653536256-uHHj
+Excited to dive into the world of game development with Godot! 🎮
+
+I've just started learning the basics of Godot, and it's been an incredible journey so far. I'm getting hands-on with tile sets and tilemaps, which are amazing for creating detailed and reusable game environments. 🗺️
+
+One thing that really stood out to me is GDScript—Godot's scripting language. It's super intuitive and feels a lot like Python, which makes the transition smoother for anyone familiar with Python. 🐍
+
+But that's not all—I’m also starting a new project! 🌾 My next venture is a farming-based game inspired by the likes of Stardew Valley. I’m excited to explore farming mechanics, character interactions, and create a charming, engaging world for players to enjoy.
+
+Will be sharing progress on this game on a weekly basis!
+Looking forward to learning more and sharing my progress! 💡 
+
+https://github.com/HakashiKatake/Stardew-Clone
+
+Crashed ship | pc/game jam | unity
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-gamejam-indiegames-activity-7236755431237316608-4rKm
+Crashed Ship," developed in just 4 days for the Mini Jam! The theme for this jam was "Earth," with an interesting limitation: "no green" We decided to go with a space exploration concept where our character, stranded in space with a broken spaceship, must find all the scattered parts and bring them back to a shop builder/dock to repair and return home.
+
+the game is playable in browser, you can try it without downloading it!
+
+Day-by-Day Breakdown:
+Day 1: We brainstormed ideas and decided on a space exploration game. The team started by designing the core mechanics and setting up the game environment. With "no green" as a constraint, we focused on vibrant colors and an alien landscape that still resonated with the idea of "Earth" from a distance.
+
+Day 2: Development kicked into high gear! We implemented player movement, interaction mechanics, and the collectible system. I worked on the player’s navigation system and ensured the controls felt fluid and responsive.
+
+Day 3:The game world came to life as we added more environmental details and polished our art style. The team focused on creating an immersive experience with unique obstacles and a retro aesthetic. I spent most of my time debugging and optimizing the gameplay loop.
+
+Day 4: It was all about the finishing touches! We added sound effects, refined the UI, and tested the game for a smoother experience. We ensured that our interpretation of the theme and constraint was clear and engaging for the players.
+
+What I Learned:
+- Constraints breed creativity: The "no green" limitation pushed us to think outside the box and develop an aesthetic that was distinct and captivating.
+- Time management is key: Working under a tight deadline reminded me of the importance of prioritizing tasks and knowing when to move on.
+- Collaborative spirit: Effective communication and teamwork made the entire process smoother and more fun.
+
+
+playable demo: https://henrylom.itch.io/crashed-ship
+
+personal blog | Taking a Close Look at Game Design with Game Programming Patterns🎮
+A couple of days back, I started to read Game Programming Patterns by Robert Nystrom, and it has changed the game for me! This book has shown me essential insights on how to design strong and expandable game systems. Here's what I've picked up so far:
+
+Before I begin, if you want to read the book too here is the free online version of it - https://lnkd.in/d2cUH9fp
+
+📜 Main Patterns I Looked Into:
+
+1. Command Pattern: 
+
+It separates game input from actions putting requests into objects. This has helped me a lot to make my game controls easy to change and set up. For instance, player inputs like "jump" or "shoot" can now be switched or even saved for later use without having to rewrite the logic. It's great for creating flexible and reusable input systems.
+
+2. Observer Pattern:
+This approach makes sure that things like UI elements respond on their own when the game's status changes. I don't have to hard-wire communication between systems anymore. If a player's health goes down, the UI refreshes without linking the two systems. It adds a fresh degree of separation and growth potential to my work.
+
+3. State Pattern: 
+Game characters often switch behaviors, like idle, attack, or run states. The State pattern keeps this tidy and easy to manage. By making each state its own class, I've gotten rid of the messy sprawling if-else logic. This keeps my code neat and easy to expand.
+
+4. Component Pattern:
+We can build game objects, like characters or items using separate components (e.g., health movement). Instead of making huge, all-in-one classes, I now put objects together by mixing various components. This makes the code cleaner and easier to keep up. This pattern has helped me create complex behaviors from simple reusable parts.
+
+5. Game Loop: 
+This forms the core of any game. This pattern makes sure that updates to game objects handling input, and drawing on screen happen in order every frame. I've learned how crucial it is to keep things running and to control how the game flows.
+
+6. Flyweight Pattern:
+Optimizing memory plays a crucial role in games that have lots of objects. The Flyweight pattern gives me the ability to share data among similar objects such as bullets or enemies, without copying memory. It's a clever technique to conserve resources while maintaining high performance.
+
+Why You Should Read This Book:
+
+If you’re into game development, this book is a must-read. It’s practical, clear, and applies directly to the challenges we face when building games. Whether you’re handling AI, UI, or game mechanics, the patterns in this book will simplify your development process and make your code more flexible and maintainable.
+
+
+
+The journey into design patterns isn’t just about writing code; it’s about writing smarter, future-proof code. 🛠️
+
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-designpatterns-programming-activity-7243287632925868032-Yssx
+
+Joe the Scammer | pc/gamejam | unity
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_indiedevgamejam5-a-journey-of-challenges-activity-7269743399518289920-_dQi
+ Our idea? A shark running a "fishy" pawn shop, overpricing random junk to unsuspecting sea creatures—a pun on both the theme and the concept. 🦈💼
+Day 1: Planning & Kicking Off
+We started by brainstorming ideas and settled on our quirky shark-salesman concept. I created the Game Design Document while Ahmed dived into the code, focusing on the dialogue system, and Ripozy and I handled all the art since we didn’t have our artist initially. Art and coding moved steadily, but juggling the art was definitely challenging for me.
+Day 2: Progressing Smoothly
+The core game loop was up and running by Day 2. Dialogue systems, art assets, and gameplay mechanics started to align. Communication and task distribution helped us keep momentum, and even with a smaller art team, we stayed on track.
+Day 3: The Final Push
+On the last day, our artist Tesstrie jumped in and gave a much-needed boost, creating a fantastic main menu and background art. With everyone’s contributions falling into place, we uploaded the game three hours before the deadline! The positive feedback we received blew us away—we secured 7th place, and the responses validated our hard work.
+
+What We Learned
+This jam was not just about making a game—it was about growth:
+Version Control: Leveraging GitHub with individual branches for each developer kept things organized and smooth.
+Consistent Art: Ensuring uniformity in art style despite the challenges of a small team.
+Time Management & Communication: Clearer coordination and task management kept the team aligned and efficient.
+
+playable demo: https://hakashi-katake.itch.io/joe-the-scammer
+
+Global game jam 2025 | unity | gamejam 
+project title: Bubble Chef
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-globalgamejam-bubblechef-activity-7289580014470127616-TjJP
+playable demo: https://hakashi-katake.itch.io/bubble-chef
+ In Bubble Chef, you play as a bubble-shaped chef managing a bustling floating kitchen. The challenge? You have to catch ingredients floating in bubbles to create iconic dishes like vada pav, pani puri, and pav bhaji! The twist is that catching the wrong ingredient or letting bubbles pop can ruin your dish, and there’s a race against time to complete all orders. With its unique mechanics, 3d visuals, and fun Indian-inspired recipes, it’s a chaotic and exciting experience that’s both creative and relatable.
+This jam was a hybrid mode experience, which came with its own unique challenges and opportunities. Half of my team was on-site, while I, along with another teammate, worked virtually. Despite being miles apart, we collaborated seamlessly, showcasing the power of determination and teamwork.
+What I learned:
+
+Collaboration at its finest: I got the chance to team up with some truly talented individuals—each bringing their A-game to the table.
+Time and resource management: Juggling tasks, brainstorming ideas, and implementing solutions within such a tight timeframe was exhilarating.
+Problem-solving under pressure: From debugging to tweaking mechanics, every moment was a learning curve that sharpened my skills.
+Meet the amazing team behind this project:
+
+ 🎮 Programmers: Myself and Rayan
+ 🎨 Artist: Mudassir
+ 🎼 Composer: Tanay
+ ✨ Other contributions: Hitesh
+
+GGJ was more than just a competition—it was an opportunity to grow, connect, and learn. To anyone considering participating, I can’t recommend it enough!
+Feeling grateful for this journey and excited to take what I’ve learned into future projects. 🚀
+
+Redacted skies | unity | pc/game jam
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-indiegames-gamejam-activity-7296196381625520130-x4wD
+Our team recently participated in a 3-day game jam where we poured our creativity, skills, and passion into making Redacted Skies – a thrilling retro-inspired adventure about survival, speed, and determination.
+The jam was an intense yet exhilarating journey with 200+ amazing entries, each bringing something unique to the table. Here's how we progressed:
+
+🔹 Day 1: We brainstormed ideas, crafted a compelling story, and laid the foundation for gameplay mechanics.
+ 🔹 Day 2: Art, programming, and composing came together as we built the core experience of evading fighter jets and homing missiles in a supercharged helicopter.
+ 🔹 Day 3: Final polish, bug fixes, and submission!
+The results? 41st place overall in voting and an incredible 16th place for best use of the theme! 🏆
+
+We’re immensely proud of what we achieved in such a short time and grateful for the recognition. This journey reaffirmed the importance of collaboration, focus, and passion.
+
+playable demo: https://hakashi-katake.itch.io/redactedskies
+
+
+Knight spade | love2d(lua) | pc/gamejam
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-indiegames-gamejam-activity-7312465197351297025-Mp05
+
+New game jam journeys! As many of you know, I usually dive into jams using Unity, but this time I thought, why not switch it up? When I discovered the Love Game Jam hosted by the Love2D framework, I decided to give it a try—after all, I've had some fun with Lua and Love2D before.
+I quickly found an amazing team within just one day, proving that the Love community is as supportive as ever!
+
+The jam theme was "plan", and it inspired us to create Knight Spade:
+🔹 Concept: A card-based game where three random cards spawn and you select one to kickstart your journey.
+ 🔹 Gameplay: The chosen card bestows a random power-up that sets you on a quest to defeat the boss!
+ 🔹 Challenge & Fun: Every playthrough is unique, keeping the experience fresh and exciting.
+Out of over 400 entries, our game achieved 12th place in graphics and 41st overall. It was an incredible learning experience that pushed me out of my comfort zone and opened up new creative avenues.
+
+game link: https://memo-dev.itch.io/knight-spade
+
+persona project | blog | Making a game in every language 
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-polyglotcoding-pygame-activity-7328822712930340864-XABF
+
+I’m thrilled to share the launch of my dream project: Making A Game In Every Language! Over the next few months, I’ll be building and shipping a simple playable game in each of the world’s most popular programming languages—from a Flappy Bird clone to a basic 3D platformer.
+
+✨ And I’m excited to share that Day 1 is already in the books: a Space Shooter built in Python with Pygame is live and ready to play! 🛸👾 You can check it out on GitHub, explore the code, and even submit enhancements. The demo is running right now as a video.
+Why this series?
+
+ For years I’ve wanted to explore how different ecosystems tackle game development. Each language has its own paradigms, strengths, and quirks—and I believe that by “speaking” them all, I’ll become a far more versatile developer.
+Languages & Frameworks (so far):
+
+Python → Pygame (Space Shooter) ✅
+C# → Unity (endless runner)
+C++ → Unreal Engine / SFML (simple shooter)
+Java → libGDX (brick breaker)
+JavaScript → Phaser / Three.js (Flappy Bird clone)
+TypeScript → PlayCanvas (basic 3D platformer)
+Lua → LÖVE (Love2D) (top-down adventure)
+Rust → Bevy (puzzle game)
+Go → Ebiten (rpg game)
+Dart → Flame (endless jumper)
+Kotlin → Korge (side-scroller)
+Swift → SpriteKit (iOS runner)
+Ruby → Gosu (simple RPG)
+
+…and yes, I’ll be adding more in response to your suggestions! Whether it’s Nim, Haxe, or even an experimental Elm engine, I want to push the boundaries of what “game dev” means in each language.
+
+github repo: https://github.com/HakashiKatake/Making-A-Game-In-Every-Language
+
+
+Glitch in the grid | love2d(lua) | pc/gamejam
+playable link: https://hakashi-katake.itch.io/glitch-in-the-grid
+🚀 Glitch in the Grid – BulletHellJam Wrap-Up 🚀
+
+I’m thrilled to share that our fast-paced shooter Glitch in the Grid snagged 30th place out of 300+ entries in the BulletHellJam competition! 🎉 Despite joining the 10-day jam halfway through, we rallied as a team and delivered a fully polished experience in just 5 days—proof that focus and passion can overcome any deadline.
+What makes Glitch in the Grid shine?
+🎯 Grid-based, lightning-fast combat that keeps you on your toes
+💥 Unique power-ups: Guardian Shield, Nuke, Rapid Fire
+🔄 Dynamic enemy waves & bullet patterns that scale in intensity
+✨ Healing orbs to turn the tide when you’re on the brink
+🎨 Clean, compelling visual style and intuitive UI
+The feedback has been phenomenal—players love the balance, the tight controls, and how our creative twist captures the pure thrill of bullet-hell gameplay.
+
+
+Amnesia | pc/game jam | godot
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-godot-gamejam-activity-7346076298416390144-b6jV
+playable demo: https://xzo-00.itch.io/amnesia
+Over the course of one intense week, we challenged ourselves to build a 3D horror experience around the theme “Unseen.” Here’s the gist of our creepy little adventure:
+
+Main Idea: You awaken in a quiet, unfamiliar house with only 2 minutes to scour the rooms for clues.
+Suddenly, you black out—and when you wake up, four faceless silhouettes stand before you. Each whispers three chilling lines.
+In the Guess Phase, you must identify the impostor by spotting contradictions between their dialogue and the clues you uncovered.
+Depending on your choice, the story ends in one of several unsettling ways… 😱
+We packed the game with atmospheric scares, thriller soundscapes, and a tense, creeping sense of dread—all made in just 6 days!
+
+I’m proud to announce that out of 500+ entries, our jam submission landed 90th place overall—and earned 70th rank in music, backed by 21 all-positive ratings! 🎉
+
+Deep bound | pc/game jam | unity
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-gmtkgamejam-indiedev-activity-7359929145352404993-QDWz
+playable demo: https://hakashi-katake.itch.io/deepbound
+we joined the GMTK Game Jam again this year (same chaotic energy as last time) and built DEEPBOUND. a weird, creepy underwater survival thing where dying doesn’t end the run, it changes you.
+
+the fun part: we only started at the end of day 2, so we had 1.5 days to design, code, make sound, art, test, and submit. of course, right when we were about to upload — github merge conflicts. fixed them, pushed, and hit submit 3 minutes before the jam closed. classic.
+
+results:
+3000 in Music
+3500 overall
+
+was it worth it? hell yea. game jams aren’t trophies, they’re checkpoints. we learned a ton about rapid prototyping, role-swapping mechanics, audio pooling, and shipping under real pressure. plus, the adrenaline of turning into a spirit and hunting your killer is just plain fun.
+
+About DeepBound:
+human with shotgun vs vengeful spirit, two 300s phases, 60s intermission, endless role-reversal, underwater vibes, and a drowning mechanic that will humiliate you.
+
+
+Fasteroid | mobile game | playstore game
+In less than 24 hours, we crossed 1,000 downloads, and that momentum is still climbing. 
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_fasteroid-is-live-on-google-play-in-less-activity-7404400605240320001-8EV6
+playable link: https://play.google.com/store/apps/details?id=com.stopwatchgames.fasteroid&pli=1
+🔥 Fasteroid 🌍
+Become the Meteor. Dodge. Dash. Destroy.
+
+Get ready to drop from the heavens in FasterRide, the ultimate hyper-casual ride of chaos where you are the meteor. Your mission? Strike Earth. Hard. But it ain't that simple – the atmosphere is wild, fast, and full of obstacles trying to slow your cosmic crash.
+
+🚀 FEATURES :
+• Simple Controls, Addictive Gameplay – Just tap and steer. It’s all about reflexes and rhythm.
+• Speed-Based Challenge – The faster you go, the harder it gets. Burn through the sky like a pro.
+• Unlockable Cosmetics – From fiery trails to galaxy skins, customize your meteor and show off.
+• Multiple Skies to Crash Through – Each run brings new vibes and visuals.
+• Skill Meets Style – Stay alive long enough to flex your best look before you hit the planet.
+
+what i learned
+ads integration
+team management
+ironsouce and google ads
+google play service integration
+leaderboard and other integrations 
+
+
+The Keyhole | upcoming | pc game | steam | unity
+HOW DEEP DOES YOUR GUILT GO?
+You are thrown into a constantly changing nightmare by The Keyhole. Keys, locked doors, and secret passageways create a tense exploration loop in each of the procedurally generated rooms you enter. Your allies are light, sound, and stealth; your mistakes cause the house to change. Deal with growing dangers and choose between making amends or going deeper into the shadows.
+
+Heavily Inspired by LSplash's "Doors"
+
+                                                        
+
+Features
+Each run creates a new room, but some offer set high-stakes moments. Procedural horror with handcrafted beats.
+
+Anomalies that take into account player behavior, room state, and progression to generate significant tension are known as context-aware anomalies.
+
+Multiple endings can result from moral decisions and found memory fragments that impact abnormal behavior in replayable narrative paths.
+
+
+                                                                                  
+
+Anomalies
+There are things in the house that seem like fears given a shape. Anticipate the following:
+
+- distort your perceptions or temporarily make movement feel incorrect;
+
+Reward keeping a room lit or punish lingering in the dark;
+
+- pose as doors or useful objects, but their true purpose is revealed;
+
+- stalk with only sound as a clue from the outskirts of sight;
+
+React when the surroundings are overstimulated (too much light, too many noises).
+
+
+steam link : https://store.steampowered.com/app/4120770/The_Keyhole/
+
+Terrific traffic | upcoming | mobile game | playstore | unity
+https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-indiedev-mobilegames-activity-7413612285837103104-Acci
+🚗 Starting development on our next title by Stopwatch Games: "Terrific Traffic" Coming soon to the Play Store!
+
+Most traffic games ask you to stop cars or build roads. We asked a different question: What if you could just delete the traffic? 😈
+
+We are currently prototyping the core mechanics for Terrific Traffic, a hypercasual arcade game where you play as a "Chaos Manager."
+
+The Problem: Blind drivers at a 4-way intersection.
+The Solution: You can't stop them. You can only TAP TO DELETE them.
+The Twist: Every car you delete costs "Reputation" (your job security). You have to balance efficiency with chaos to stay employed!
+
+

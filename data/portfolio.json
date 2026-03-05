@@ -1,0 +1,290 @@
+{
+  "name": "Saurabh",
+  "title": "Game Developer",
+
+  "about": {
+    "bio": "Game developer specializing in Unity, Godot and pixel art. Passionate about creating immersive experiences, retro-style games, and interactive storytelling.",
+    "location": "Mumbai"
+  },
+
+  "skills": [
+    {
+      "name": "Unity",
+      "level": "Advanced",
+      "description": "2D and 3D gameplay systems, physics, UI, and multiplayer"
+    },
+    {
+      "name": "Godot",
+      "level": "Advanced",
+      "description": "GDScript and C# game development, 2D platformers"
+    },
+    {
+      "name": "Game Design",
+      "level": "Advanced",
+      "description": "Level design, mechanics design, balancing, and playtesting"
+    },
+    {
+      "name": "Pixel Art",
+      "level": "Intermediate",
+      "description": "Character sprites, tilesets, and animation"
+    },
+    {
+      "name": "C#",
+      "level": "Advanced",
+      "description": "Game scripting, tools, and editor extensions"
+    },
+    {
+      "name": "TypeScript",
+      "level": "Intermediate",
+      "description": "Web-based games and interactive experiences"
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Sky Racer",
+      "description": "A thrilling game where you navigate a car through 3D space with narrow roads. Tap to change direction as the road shifts — a test of quick reflexes and precise timing!",
+      "engine": "Unity",
+      "demo": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7215980709327343616-UwmH",
+      "category": "mobile"
+    },
+    {
+      "name": "Fast Ball",
+      "description": "A minimalistic hypercasual game where the score increases as you touch platforms and you die if you collide with enemies. Features main menu, scene management, and audio options.",
+      "engine": "Unity",
+      "demo": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7216440560025255936-vl3h",
+      "category": "mobile"
+    },
+    {
+      "name": "TheFishMaster",
+      "description": "A fishing game where the hook is cast for a certain length and catches fishes as it comes back. Features dragging mechanics, fish spawning at different water levels, and idle earning.",
+      "engine": "Unity",
+      "demo": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7216825573266927618-q362",
+      "category": "mobile"
+    },
+    {
+      "name": "Collect It!",
+      "description": "Collect blobs to refill your energy bar before it depletes! Features touch-to-move, random blob spawning, and player bounce mechanics.",
+      "engine": "Unity",
+      "demo": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7217208371249090560-Ykz4",
+      "category": "mobile"
+    },
+    {
+      "name": "Shinobi Runner",
+      "description": "A Naruto fan game with split-screen gameplay. Two characters dodge kunai knives — tap each side of the screen to dodge. If one dies, game over!",
+      "engine": "Unity",
+      "demo": "",
+      "github": "",
+      "linkedin": "",
+      "category": "mobile"
+    },
+    {
+      "name": "Shoot It!",
+      "description": "A basketball game where you drag and shoot the ball into the post. Miss 3 shots and you're out! Features basketball physics, lives system, and 2D vector art.",
+      "engine": "Unity",
+      "demo": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7217925216700682240-23HG",
+      "category": "mobile"
+    },
+    {
+      "name": "Donkey Kong Clone",
+      "description": "A recreation of the classic Donkey Kong game from Gameboy times! Features vertical climbing, barrel physics, level progression, pixel art, and animations.",
+      "engine": "Unity",
+      "demo": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7218294902760062976-RdsH",
+      "category": "mobile"
+    },
+    {
+      "name": "Hotshot",
+      "description": "A game made for Polymars x ScoreSpace Game Jam in 3 days. Built with a team of 4 across timezones. Features a leaderboard system and was submitted with just 10 minutes left!",
+      "engine": "Unity",
+      "demo": "https://henrylom.itch.io/hotshot",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamejam-polymarsxscorespace-gamedev-activity-7223783393828732929-_Us1",
+      "category": "gamejam"
+    },
+    {
+      "name": "Squishy Sophie",
+      "description": "A puzzle platformer for GMTK Jam 2024. Play as Sophie the cat on a mission to reach the milk! Dodge dogs, eat fish to grow, avoid yarn balls. Theme: 'Built to Scale'.",
+      "engine": "Unity",
+      "demo": "https://henrylom.itch.io/squishy-sophie",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gmtkjam2024-gamedev-squishysophie-activity-7232060317302710272-rbI4",
+      "category": "gamejam"
+    },
+    {
+      "name": "Crashed Ship",
+      "description": "A space exploration game for the Mini Jam (4 days). Theme: 'Earth' with 'no green' constraint. Find scattered spaceship parts and repair your ship to return home!",
+      "engine": "Unity",
+      "demo": "https://henrylom.itch.io/crashed-ship",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-gamejam-indiegames-activity-7236755431237316608-4rKm",
+      "category": "gamejam"
+    },
+    {
+      "name": "Joe the Scammer",
+      "description": "A quirky game about a shark running a 'fishy' pawn shop, overpricing junk to sea creatures. Made for IndieDevGameJam5. Secured 7th place!",
+      "engine": "Unity",
+      "demo": "https://hakashi-katake.itch.io/joe-the-scammer",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_indiedevgamejam5-a-journey-of-challenges-activity-7269743399518289920-_dQi",
+      "category": "gamejam"
+    },
+    {
+      "name": "Bubble Chef",
+      "description": "Global Game Jam 2025 entry. Play as a bubble-shaped chef catching ingredients to create Indian dishes like vada pav and pani puri! 3D visuals with chaotic cooking action.",
+      "engine": "Unity",
+      "demo": "https://hakashi-katake.itch.io/bubble-chef",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-globalgamejam-bubblechef-activity-7289580014470127616-TjJP",
+      "category": "gamejam"
+    },
+    {
+      "name": "Redacted Skies",
+      "description": "A retro-inspired adventure about survival, speed, and determination. 3-day jam with 200+ entries. Placed 41st overall and 16th for best theme use!",
+      "engine": "Unity",
+      "demo": "https://hakashi-katake.itch.io/redactedskies",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-indiegames-gamejam-activity-7296196381625520130-x4wD",
+      "category": "gamejam"
+    },
+    {
+      "name": "Knight Spade",
+      "description": "A card-based game for the Love Game Jam. Pick a card to get a random power-up and defeat the boss! 12th in graphics, 41st overall out of 400+ entries.",
+      "engine": "Love2D (Lua)",
+      "demo": "https://memo-dev.itch.io/knight-spade",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-indiegames-gamejam-activity-7312465197351297025-Mp05",
+      "category": "gamejam"
+    },
+    {
+      "name": "Glitch in the Grid",
+      "description": "A fast-paced bullet-hell shooter for BulletHellJam. Grid-based combat with unique power-ups, dynamic enemy waves, and healing orbs. 30th out of 300+ entries!",
+      "engine": "Love2D (Lua)",
+      "demo": "https://hakashi-katake.itch.io/glitch-in-the-grid",
+      "github": "",
+      "linkedin": "",
+      "category": "gamejam"
+    },
+    {
+      "name": "Amnesia",
+      "description": "A 3D horror game for a week-long jam. Wake up in an unfamiliar house, find clues, identify the impostor among faceless silhouettes. 90th out of 500+ entries!",
+      "engine": "Godot",
+      "demo": "https://xzo-00.itch.io/amnesia",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-godot-gamejam-activity-7346076298416390144-b6jV",
+      "category": "gamejam"
+    },
+    {
+      "name": "Deep Bound",
+      "description": "Made for GMTK Game Jam. An underwater survival game where dying doesn't end the run — it changes you. Built in 1.5 days, submitted 3 minutes before deadline!",
+      "engine": "Unity",
+      "demo": "https://hakashi-katake.itch.io/deepbound",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-gmtkgamejam-indiedev-activity-7359929145352404993-QDWz",
+      "category": "gamejam"
+    },
+    {
+      "name": "Stardew Valley Clone",
+      "description": "A farming-based game inspired by Stardew Valley, built while learning Godot. Exploring farming mechanics, character interactions, and charming world-building.",
+      "engine": "Godot",
+      "demo": "",
+      "github": "https://github.com/HakashiKatake/Stardew-Clone",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-godot-learning-activity-7234254866653536256-uHHj",
+      "category": "personal"
+    },
+    {
+      "name": "Making a Game in Every Language",
+      "description": "Building a playable game in every popular programming language — Python, C#, C++, Java, JS, TS, Lua, Rust, Go, Dart, Kotlin, Swift, Ruby and more!",
+      "engine": "Multi-Language",
+      "demo": "",
+      "github": "https://github.com/HakashiKatake/Making-A-Game-In-Every-Language",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-polyglotcoding-pygame-activity-7328822712930340864-XABF",
+      "category": "personal"
+    }
+  ],
+
+  "blogs": [
+    {
+      "title": "Game Design with Game Programming Patterns",
+      "description": "A deep dive into Game Programming Patterns by Robert Nystrom — covering Command, Observer, State, Component, Game Loop, and Flyweight patterns for building robust game systems.",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-designpatterns-programming-activity-7243287632925868032-Yssx"
+    },
+    {
+      "title": "Making a Game in Every Language — Day 1",
+      "description": "Launching my dream project: building a playable game in every popular programming language. Day 1: Space Shooter in Python with Pygame!",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-polyglotcoding-pygame-activity-7328822712930340864-XABF",
+      "github": "https://github.com/HakashiKatake/Making-A-Game-In-Every-Language"
+    }
+  ],
+
+  "gameJams": [],
+
+  "achievements": [
+    {
+      "title": "12th in Graphics — Love Game Jam (Knight Spade)",
+      "year": 2025
+    },
+    {
+      "title": "7th Place — IndieDevGameJam5 (Joe the Scammer)",
+      "year": 2024
+    },
+    {
+      "title": "30th out of 300+ — BulletHellJam (Glitch in the Grid)",
+      "year": 2025
+    },
+    {
+      "title": "16th Best Theme Use — 3-Day Jam (Redacted Skies)",
+      "year": 2025
+    },
+    {
+      "title": "Global Game Jam 2025 Participant (Bubble Chef)",
+      "year": 2025
+    },
+    {
+      "title": "90th out of 500+ entries (Amnesia)",
+      "year": 2025
+    }
+  ],
+
+  "contact": {
+    "github": "https://github.com/HakashiKatake",
+    "linkedin": "https://www.linkedin.com/in/saurabh-yadav-925a7527a",
+    "email": "saurabh@gamedev.com"
+  },
+
+  "favoriteGames": ["Celeste", "Hollow Knight", "Journey"],
+
+  "npcDialogues": {
+    "alchemist": [
+      "Welcome, adventurer! I'm the Skill Alchemist.",
+      "Each crystal here represents a skill Saurabh has mastered.",
+      "Press E near the crystals to learn more!"
+    ],
+    "miner": [
+      "Yo! I guard the Project Mines.",
+      "Every chest contains a project Saurabh has built.",
+      "Some are game jam entries, some are passion projects!"
+    ],
+    "shaman": [
+      "Greetings, young one. I keep the Hall of Achievements.",
+      "Each statue tells the story of a milestone.",
+      "Saurabh's journey has been quite remarkable."
+    ],
+    "villageLady": [
+      "Hello there! Looking for Saurabh?",
+      "He's a game developer from Mumbai.",
+      "Check out the terminal at the end to get in touch!"
+    ]
+  }
+}
