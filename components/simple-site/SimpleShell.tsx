@@ -1,6 +1,8 @@
-import Link from "next/link";
 import type { PortfolioData } from "@/components/types";
 import SimpleNav from "@/components/simple-site/SimpleNav";
+import RetroLinkButton from "@/components/simple-site/RetroLinkButton";
+import { Bubble } from "pixel-retroui";
+import { RETRO_THEME } from "@/components/simple-site/theme";
 
 interface SimpleShellProps {
   data: PortfolioData;
@@ -13,12 +15,12 @@ export default function SimpleShell({ data, children }: SimpleShellProps) {
 
   return (
     <div className="simple-shell">
+      <div className="simple-starfield" aria-hidden="true" />
+
       <header className="simple-header">
         <div className="simple-header-inner">
           <div>
-            <Link href="/simple" className="simple-wordmark">
-              {name}
-            </Link>
+            <p className="simple-wordmark">{name}</p>
             <p className="simple-wordmark-subtitle">{title}</p>
           </div>
           <SimpleNav />
@@ -29,13 +31,22 @@ export default function SimpleShell({ data, children }: SimpleShellProps) {
 
       <footer className="simple-footer">
         <div className="simple-footer-inner">
-          <p>{name}</p>
-          <p>
+          <Bubble
+            direction="left"
+            bg={RETRO_THEME.bubbleBg}
+            textColor={RETRO_THEME.text}
+            borderColor={RETRO_THEME.border}
+            className="simple-footer-bubble"
+          >
             {data.about.location} • {new Date().getFullYear()}
-          </p>
-          <a href={data.meta?.resumeUrl ?? "/resume.pdf"} target="_blank" rel="noreferrer">
-            Resume
-          </a>
+          </Bubble>
+
+          <div className="simple-footer-actions">
+            <p>{name}</p>
+            <RetroLinkButton href={data.meta?.resumeUrl ?? "/resume.pdf"} variant="primary" newTab>
+              Resume
+            </RetroLinkButton>
+          </div>
         </div>
       </footer>
     </div>

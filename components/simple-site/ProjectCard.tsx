@@ -1,6 +1,8 @@
-import Link from "next/link";
 import type { Project } from "@/components/types";
+import RetroLinkButton from "@/components/simple-site/RetroLinkButton";
 import { resolveProjectId } from "@/lib/simple-site";
+import { Card } from "pixel-retroui";
+import { RETRO_CARD_PROPS } from "@/components/simple-site/theme";
 
 interface ProjectCardProps {
   project: Project;
@@ -13,28 +15,30 @@ export default function ProjectCard({ project, hrefBase, hasCover }: ProjectCard
   const linkPath = `${hrefBase}/${slug}`;
 
   return (
-    <article className="simple-card simple-project-card">
-      <Link href={linkPath} className="simple-card-link" aria-label={`Open ${project.name}`}>
-        <div className="simple-media-frame" aria-hidden="true">
-          {hasCover ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={project.cover} alt="" className="simple-media-image" />
-          ) : (
-            <div className="simple-media-fallback">
-              <span>{project.name}</span>
-            </div>
-          )}
-        </div>
-        <div className="simple-card-content">
-          <p className="simple-kicker">{project.year ?? "Year N/A"}</p>
-          <h2 className="simple-card-title">{project.name}</h2>
-          <p className="simple-card-text">{project.description}</p>
-          <div className="simple-meta-row">
-            <span>{project.engine}</span>
-            <span>{project.category}</span>
+    <Card {...RETRO_CARD_PROPS} className="simple-retro-card simple-project-card">
+      <div className="simple-media-frame" aria-hidden="true">
+        {hasCover ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={project.cover} alt="" className="simple-media-image" />
+        ) : (
+          <div className="simple-media-fallback">
+            <span>{project.name}</span>
           </div>
+        )}
+      </div>
+
+      <div className="simple-card-content">
+        <p className="simple-kicker">{project.year ?? "Year N/A"}</p>
+        <h2 className="simple-card-title">{project.name}</h2>
+        <p className="simple-card-text">{project.description}</p>
+        <div className="simple-meta-row">
+          <span>{project.engine}</span>
+          <span>{project.category}</span>
         </div>
-      </Link>
-    </article>
+        <RetroLinkButton href={linkPath} variant="primary" className="simple-card-button">
+          Open Build Log
+        </RetroLinkButton>
+      </div>
+    </Card>
   );
 }

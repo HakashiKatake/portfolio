@@ -1,5 +1,8 @@
+import { Button, Card, Input, TextArea } from "pixel-retroui";
 import PageIntro from "@/components/simple-site/PageIntro";
+import RetroLinkButton from "@/components/simple-site/RetroLinkButton";
 import { getPortfolioData } from "@/data/loader";
+import { RETRO_CARD_PROPS, RETRO_THEME } from "@/components/simple-site/theme";
 
 export default function ContactPage() {
   const data = getPortfolioData();
@@ -8,49 +11,69 @@ export default function ContactPage() {
     <div>
       <PageIntro
         label="Contact"
-        title="Open for game dev collaboration and production work."
-        summary="Use the channels below for hiring, team invites, jam collaborations, or technical discussions."
-        aside={<p>Primary response channel is email. External profiles include project logs and source repositories.</p>}
+        title="Open for game development collaboration"
+        summary="Reach out for freelance work, studio collaboration, jam teams, or technical discussions around gameplay systems."
+        aside={<p>Best response channel: email. You can also connect via LinkedIn and GitHub links below.</p>}
       />
 
-      <section className="simple-grid simple-grid-cols-2">
-        <article className="simple-card">
+      <section className="simple-section simple-two-col">
+        <Card {...RETRO_CARD_PROPS} className="simple-retro-card">
           <div className="simple-card-content">
-            <p className="simple-kicker">Email</p>
-            <h2 className="simple-card-title">{data.contact.email}</h2>
-            <a href={`mailto:${data.contact.email}`} className="simple-action simple-focus-ring">
-              Send Email
-            </a>
+            <h2 className="simple-section-title">Send a Message</h2>
+            <div className="simple-form-grid">
+              <Input
+                placeholder="Your name"
+                bg={RETRO_THEME.panelAlt}
+                textColor={RETRO_THEME.text}
+                borderColor={RETRO_THEME.border}
+                className="simple-retro-input"
+              />
+              <Input
+                type="email"
+                placeholder="Your email"
+                bg={RETRO_THEME.panelAlt}
+                textColor={RETRO_THEME.text}
+                borderColor={RETRO_THEME.border}
+                className="simple-retro-input"
+              />
+              <TextArea
+                placeholder="Tell me about your game, role, or collaboration idea"
+                bg={RETRO_THEME.panelAlt}
+                textColor={RETRO_THEME.text}
+                borderColor={RETRO_THEME.border}
+                className="simple-retro-textarea"
+              />
+              <Button
+                type="button"
+                bg={RETRO_THEME.buttonPrimaryBg}
+                textColor={RETRO_THEME.buttonText}
+                shadow={RETRO_THEME.buttonShadow}
+                borderColor={RETRO_THEME.border}
+                className="simple-retro-button simple-submit-button"
+              >
+                Send Inquiry
+              </Button>
+            </div>
           </div>
-        </article>
+        </Card>
 
-        <article className="simple-card">
+        <Card {...RETRO_CARD_PROPS} className="simple-retro-card">
           <div className="simple-card-content">
-            <p className="simple-kicker">LinkedIn</p>
-            <h2 className="simple-card-title">Professional Timeline</h2>
-            <a href={data.contact.linkedin} target="_blank" rel="noreferrer" className="simple-action simple-focus-ring">
-              Open LinkedIn
-            </a>
+            <h2 className="simple-section-title">Direct Channels</h2>
+            <p className="simple-card-text">Email: {data.contact.email}</p>
+            <div className="simple-button-row">
+              <RetroLinkButton href={`mailto:${data.contact.email}`} variant="primary">
+                Email Direct
+              </RetroLinkButton>
+              <RetroLinkButton href={data.contact.linkedin} newTab>
+                LinkedIn
+              </RetroLinkButton>
+              <RetroLinkButton href={data.contact.github} newTab>
+                GitHub
+              </RetroLinkButton>
+            </div>
           </div>
-        </article>
-
-        <article className="simple-card">
-          <div className="simple-card-content">
-            <p className="simple-kicker">GitHub</p>
-            <h2 className="simple-card-title">Code Archive</h2>
-            <a href={data.contact.github} target="_blank" rel="noreferrer" className="simple-action simple-focus-ring">
-              Open GitHub
-            </a>
-          </div>
-        </article>
-
-        <article className="simple-card">
-          <div className="simple-card-content">
-            <p className="simple-kicker">Location</p>
-            <h2 className="simple-card-title">{data.about.location}</h2>
-            <p className="simple-card-text">Remote-friendly and available for indie and studio-side collaboration.</p>
-          </div>
-        </article>
+        </Card>
       </section>
     </div>
   );

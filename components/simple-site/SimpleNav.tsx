@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import RetroLinkButton from "@/components/simple-site/RetroLinkButton";
 
 const NAV_ITEMS = [
   { href: "/simple", label: "Home" },
@@ -28,16 +28,15 @@ export default function SimpleNav() {
       <ul className="simple-nav-list">
         {NAV_ITEMS.map((item) => {
           const active = isPathActive(pathname, item.href);
-
           return (
             <li key={item.href}>
-              <Link
+              <RetroLinkButton
                 href={item.href}
-                className={active ? "simple-nav-link simple-nav-link-active" : "simple-nav-link"}
-                aria-current={active ? "page" : undefined}
+                variant={active ? "primary" : "secondary"}
+                className={active ? "simple-nav-button simple-nav-button-active" : "simple-nav-button"}
               >
                 {item.label}
-              </Link>
+              </RetroLinkButton>
             </li>
           );
         })}

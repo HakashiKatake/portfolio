@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter, Geist } from "next/font/google";
 import "./globals.css";
-// import "@/lib/pixel-retroui-setup.js"; // Removing retro UI setup
+import "@/lib/pixel-retroui-setup.js";
 import { ModeToggle } from "@/components/ModeToggle";
 import { cn } from "@/lib/utils";
 

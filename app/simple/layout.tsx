@@ -5,7 +5,7 @@ import SimpleShell from "@/components/simple-site/SimpleShell";
 
 export const metadata: Metadata = {
   title: "Saurabh | Game Developer Portfolio",
-  description: "Neutral, editorial portfolio for games, projects, and writing.",
+  description: "RetroUI-powered purple game developer portfolio with projects, games, and dev logs.",
 };
 
 export default async function SimpleLayout({ children }: { children: React.ReactNode }) {

@@ -1,12 +1,14 @@
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
-import Link from "next/link";
+import { Card } from "pixel-retroui";
 import { notFound } from "next/navigation";
 import PageIntro from "@/components/simple-site/PageIntro";
 import MarkdownBlocks from "@/components/simple-site/MarkdownBlocks";
+import RetroLinkButton from "@/components/simple-site/RetroLinkButton";
 import { getPortfolioData } from "@/data/loader";
 import { formatDate, getBlogBySlug, resolveBlogSlug } from "@/lib/simple-site";
+import { RETRO_CARD_PROPS } from "@/components/simple-site/theme";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -55,33 +57,41 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 </span>
               ))}
             </div>
-            <Link href="/simple/blog" className="simple-action simple-focus-ring">
+            <RetroLinkButton href="/simple/blog" variant="primary">
               Back to Blog
-            </Link>
+            </RetroLinkButton>
           </div>
         }
       />
 
       <section className="simple-section">
-        <h2 className="simple-section-title">Article</h2>
-        {markdown ? <MarkdownBlocks content={markdown} /> : <p className="simple-section-text">Markdown content not found for this post.</p>}
+        <Card {...RETRO_CARD_PROPS} className="simple-retro-card">
+          <div className="simple-card-content">
+            <h2 className="simple-section-title">Article</h2>
+            {markdown ? <MarkdownBlocks content={markdown} /> : <p className="simple-section-text">Markdown content not found for this post.</p>}
+          </div>
+        </Card>
       </section>
 
       <section className="simple-section">
-        <h2 className="simple-section-title">References</h2>
-        <div className="simple-action-row">
-          {blog.linkedin ? (
-            <a href={blog.linkedin} target="_blank" rel="noreferrer" className="simple-action simple-focus-ring">
-              LinkedIn Post
-            </a>
-          ) : null}
-          {blog.github ? (
-            <a href={blog.github} target="_blank" rel="noreferrer" className="simple-action simple-focus-ring">
-              GitHub Repo
-            </a>
-          ) : null}
-          {!blog.linkedin && !blog.github ? <p className="simple-section-text">No reference links added.</p> : null}
-        </div>
+        <Card {...RETRO_CARD_PROPS} className="simple-retro-card">
+          <div className="simple-card-content">
+            <h2 className="simple-section-title">References</h2>
+            <div className="simple-button-row">
+              {blog.linkedin ? (
+                <RetroLinkButton href={blog.linkedin} variant="primary" newTab>
+                  LinkedIn Post
+                </RetroLinkButton>
+              ) : null}
+              {blog.github ? (
+                <RetroLinkButton href={blog.github} newTab>
+                  GitHub Repo
+                </RetroLinkButton>
+              ) : null}
+              {!blog.linkedin && !blog.github ? <p className="simple-section-text">No reference links added.</p> : null}
+            </div>
+          </div>
+        </Card>
       </section>
     </div>
   );
