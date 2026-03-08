@@ -28,8 +28,8 @@ export default async function ContactPage() {
           
           {/* Left Block - Manifesto / Prompt */}
           <div className="flex flex-col justify-start">
-              <div className="brutal-card p-8 md:p-12 bg-white relative h-full flex flex-col justify-center mt-4">
-                 <span className="absolute -top-6 -left-4 bg-[var(--color-accent)] text-[var(--foreground)] border-4 border-[var(--foreground)] px-4 py-2 font-inter font-black uppercase tracking-widest text-lg md:text-xl shadow-[8px_8px_0px_var(--foreground)]">
+              <div className="brutal-card p-8 md:p-12 bg-card relative h-full flex flex-col justify-center mt-4">
+                 <span className="absolute -top-6 left-4 bg-[var(--accent)] text-[var(--accent-foreground)] border-4 border-[var(--foreground)] px-4 py-2 font-inter font-black uppercase tracking-widest text-lg md:text-xl shadow-[8px_8px_0px_var(--foreground)]">
                      STATUS: AWAITING INPUT
                  </span>
                  <p className="font-inter text-xl md:text-2xl font-medium leading-relaxed mt-4">
@@ -45,12 +45,12 @@ export default async function ContactPage() {
           <div className="flex flex-col gap-6 justify-start">
               
               {data.contact.email && (
-                  <a href={`mailto:${data.contact.email}`} className="brutal-card bg-white p-8 flex items-center justify-between group hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[12px_12px_0px_var(--foreground)] transition-transform">
+                  <a href={`mailto:${data.contact.email}`} className="brutal-card bg-card p-8 flex items-center justify-between group hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[12px_12px_0px_var(--foreground)] transition-transform overflow-hidden">
                       <div className="flex flex-col gap-2">
                           <span className="text-[var(--foreground)] font-inter text-sm font-bold uppercase tracking-[0.2em] flex items-center gap-2">
                               <Mail size={16} /> Email Direct
                           </span>
-                          <span className="font-playfair text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tighter group-hover:underline decoration-4 underline-offset-4">
+                          <span className="font-playfair text-[clamp(1.5rem,3vw,3rem)] font-black uppercase tracking-tighter group-hover:underline decoration-4 underline-offset-4 break-all">
                               {data.contact.email}
                           </span>
                       </div>

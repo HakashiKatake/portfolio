@@ -62,12 +62,12 @@ export default function ProjectsPage() {
       </div>
 
       {/* ─── Filters ─── */}
-      <div className="w-full border-b-4 border-[var(--foreground)] bg-white sticky top-0 z-20">
+      <div className="w-full border-b-4 border-[var(--foreground)] bg-background sticky top-0 z-20">
         <div className="max-w-7xl mx-auto px-8 py-4 flex flex-col md:flex-row md:items-center gap-4">
           <span className="font-inter font-black uppercase text-sm tracking-widest hidden md:block border-r-4 border-[var(--foreground)] pr-4 py-2">
             Filter
           </span>
-          <div className="flex flex-wrap gap-2 md:gap-4">
+          <div className="flex flex-wrap gap-2 md:gap-4 justify-center md:justify-start">
             {filterOptions.map((opt) => (
               <button
                 key={opt.id}
@@ -96,7 +96,7 @@ export default function ProjectsPage() {
             </span>
           </div>
         ) : filteredProjects.length === 0 ? (
-          <div className="w-full py-32 flex justify-center items-center border-4 border-dashed border-[var(--foreground)] bg-gray-100">
+          <div className="w-full py-32 flex justify-center items-center border-4 border-dashed border-[var(--foreground)] bg-card">
             <span className="font-inter font-black text-2xl uppercase tracking-widest">
               No results found
             </span>

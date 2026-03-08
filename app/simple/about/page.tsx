@@ -37,7 +37,7 @@ export default async function AboutPage() {
         {/* Bio */}
         <section className="max-w-4xl mx-auto w-full">
             <FadeInUp>
-              <div className="brutal-card p-10 md:p-16 bg-white text-center flex flex-col items-center">
+              <div className="brutal-card p-10 md:p-16 bg-card text-center flex flex-col items-center">
                   <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-[var(--color-accent)] border-4 border-[var(--foreground)] flex flex-col items-center justify-center mb-8 shadow-[6px_6px_0px_var(--foreground)]">
                     <Cpu size={40} strokeWidth={2} />
                   </div>
@@ -72,7 +72,7 @@ export default async function AboutPage() {
                   
                   return (
                       <FadeInUp key={skill.name} delay={index * 0.1} className="h-full">
-                        <div className="brutal-card p-8 bg-white flex flex-col justify-between h-full text-center hover:-translate-y-2 transition-transform duration-300">
+                        <div className="brutal-card p-8 bg-card flex flex-col justify-between h-full text-center hover:-translate-y-2 transition-transform duration-300">
                             <div className="mb-8">
                                <h3 className="font-playfair font-black text-3xl uppercase tracking-tight leading-tight mb-4">{skill.name}</h3>
                                <div className="inline-block font-inter font-bold text-sm uppercase tracking-widest bg-[var(--foreground)] text-[var(--background)] px-3 py-1 mb-6">
@@ -135,7 +135,7 @@ export default async function AboutPage() {
                <div className="space-y-10">
                    {data.gameJams.map((jam: any, idx: number) => (
                        <FadeInUp key={jam.name} delay={idx * 0.1}>
-                         <div className="brutal-card p-0 flex flex-col md:flex-row bg-white overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
+                         <div className="brutal-card p-0 flex flex-col md:flex-row bg-card overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
                              
                              <div className="bg-[var(--color-accent)] border-b-4 md:border-b-0 md:border-r-4 border-[var(--foreground)] p-8 md:p-12 flex items-center justify-center shrink-0 w-full md:w-48">
                                  <span className="font-playfair font-black text-5xl md:text-6xl text-[var(--foreground)] group-hover:scale-110 transition-transform duration-300">
