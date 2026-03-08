@@ -3,23 +3,23 @@ import { notFound } from "next/navigation";
 import PageIntro from "@/components/simple-site/PageIntro";
 import { getPortfolioData } from "@/data/loader";
 import {
+  getGameProjects,
   getProjectById,
-  getSortedProjects,
   hasPlayableBuild,
   isPublicAssetAvailable,
   resolveProjectId,
 } from "@/lib/simple-site";
 
-interface ProjectDetailPageProps {
+interface GameDetailPageProps {
   params: Promise<{ id: string }>;
 }
 
 export function generateStaticParams() {
   const data = getPortfolioData();
-  return getSortedProjects(data).map((project) => ({ id: resolveProjectId(project) }));
+  return getGameProjects(data).map((project) => ({ id: resolveProjectId(project) }));
 }
 
-export default async function ProjectDetailPage({ params }: ProjectDetailPageProps) {
+export default async function GameDetailPage({ params }: GameDetailPageProps) {
   const { id } = await params;
   const data = getPortfolioData();
   const project = getProjectById(data, id);
@@ -33,16 +33,16 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
   return (
     <div>
       <PageIntro
-        label="Project Detail"
+        label="Game Detail"
         title={project.name}
         summary={project.description}
         aside={
           <div className="simple-timeline">
-            <p>{project.year ? `Released ${project.year}` : "Year unavailable"}</p>
             <p>{project.engine}</p>
-            <p>{project.category}</p>
-            <Link href="/simple/projects" className="simple-action simple-focus-ring">
-              Back to Projects
+            <p>{project.year ?? "Year unavailable"}</p>
+            <p>{hasPlayableBuild(project) ? "Build available" : "No public build"}</p>
+            <Link href="/simple/games" className="simple-action simple-focus-ring">
+              Back to Games
             </Link>
           </div>
         }
@@ -62,19 +62,15 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
       </section>
 
       <section className="simple-section">
-        <h2 className="simple-section-title">Build Summary</h2>
+        <h2 className="simple-section-title">Gameplay Notes</h2>
         <div className="simple-strip">
           <div className="simple-strip-row">
-            <span>Engine</span>
-            <span>{project.engine}</span>
+            <span>Category</span>
+            <span>{project.category}</span>
           </div>
           <div className="simple-strip-row">
             <span>Platform</span>
             <span>{(project.platform ?? []).join(", ") || "Not specified"}</span>
-          </div>
-          <div className="simple-strip-row">
-            <span>Role</span>
-            <span>{project.role ?? "Not specified"}</span>
           </div>
           <div className="simple-strip-row">
             <span>Tools</span>
@@ -84,16 +80,11 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
       </section>
 
       <section className="simple-section">
-        <h2 className="simple-section-title">What I Learned</h2>
-        <p className="simple-section-text">{project.whatILearned ?? "No reflection added for this project yet."}</p>
-      </section>
-
-      <section className="simple-section">
-        <h2 className="simple-section-title">Links</h2>
+        <h2 className="simple-section-title">External Links</h2>
         <div className="simple-action-row">
-          {hasPlayableBuild(project) ? (
+          {project.demo ? (
             <a href={project.demo} target="_blank" rel="noreferrer" className="simple-action simple-focus-ring">
-              Play Build
+              Play Now
             </a>
           ) : null}
           {project.github ? (
@@ -106,7 +97,9 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
               LinkedIn Post
             </a>
           ) : null}
-          {!project.demo && !project.github && !project.linkedin ? <p className="simple-section-text">No external links published.</p> : null}
+          {!project.demo && !project.github && !project.linkedin ? (
+            <p className="simple-section-text">No external links published for this game.</p>
+          ) : null}
         </div>
       </section>
     </div>

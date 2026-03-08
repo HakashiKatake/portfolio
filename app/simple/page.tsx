@@ -1,92 +1,93 @@
 import Link from "next/link";
+import PageIntro from "@/components/simple-site/PageIntro";
+import ProjectCard from "@/components/simple-site/ProjectCard";
+import BlogCard from "@/components/simple-site/BlogCard";
 import { getPortfolioData } from "@/data/loader";
-import { ArrowUpRight } from "lucide-react";
-import FadeInUp from "@/components/FadeInUp";
+import {
+  getFeaturedProjects,
+  getProjectStats,
+  getSortedBlogs,
+  isPublicAssetAvailable,
+} from "@/lib/simple-site";
 
-export default async function SimpleHomePage() {
-  const data = await getPortfolioData();
-  
-  const featuredProjects = data.projects
-    .filter((p: any) => p.featured)
-    .slice(0, 4);
+export default function SimpleHomePage() {
+  const data = getPortfolioData();
+  const featuredProjects = getFeaturedProjects(data).slice(0, 6);
+  const latestBlogs = getSortedBlogs(data).slice(0, 2);
+  const stats = getProjectStats(data);
 
   return (
-    <div className="w-full flex flex-col">
-      {/* ─── Hero Section ─── */}
-      <section className="w-full min-h-[85vh] flex flex-col justify-center px-8 py-20 border-b-4 border-[var(--foreground)] bg-[var(--color-primary)]">
-        <div className="max-w-7xl mx-auto w-full">
-          <FadeInUp>
-            <h1 className="font-playfair font-black text-6xl md:text-8xl lg:text-[10rem] uppercase leading-none tracking-tighter text-[var(--foreground)] mb-8 mix-blend-multiply">
-              {data.meta?.name ?? data.name}
-            </h1>
-          </FadeInUp>
-          <FadeInUp delay={0.1}>
-            <p className="font-inter font-medium text-xl md:text-2xl lg:text-3xl max-w-3xl text-[var(--background)] border-l-8 border-[var(--foreground)] pl-6 py-2">
-              {data.about.bio}
+    <div>
+      <PageIntro
+        label="Studio Portfolio"
+        title="Game systems, shipped fast, documented clearly."
+        summary={data.about.bio}
+        aside={
+          <div className="simple-timeline">
+            <p>
+              I build gameplay-first projects with an emphasis on readable architecture, clean loops, and quick iteration.
             </p>
-          </FadeInUp>
-          <FadeInUp delay={0.2}>
-            <div className="mt-12 flex flex-wrap gap-6">
-               <Link href="/simple/projects" className="brutal-btn text-xl px-8 py-4 !bg-[var(--background)] !text-[var(--foreground)] hover:!bg-[var(--foreground)] hover:!text-[var(--background)]">
-                 View All Projects <ArrowUpRight className="inline ml-2" />
-               </Link>
+            <div className="simple-action-row">
+              <Link href="/simple/games" className="simple-action simple-focus-ring">
+                Open Games
+              </Link>
+              <Link href="/simple/projects" className="simple-action simple-focus-ring">
+                Open Projects
+              </Link>
             </div>
-          </FadeInUp>
+          </div>
+        }
+      />
+
+      <section className="simple-stats" aria-label="Portfolio stats">
+        <article className="simple-stat">
+          <strong>{stats.totalProjects}</strong>
+          <span>Total Projects</span>
+        </article>
+        <article className="simple-stat">
+          <strong>{stats.totalGames}</strong>
+          <span>Game Pages</span>
+        </article>
+        <article className="simple-stat">
+          <strong>{stats.totalBlogs}</strong>
+          <span>Blog Posts</span>
+        </article>
+        <article className="simple-stat">
+          <strong>{stats.totalJams}</strong>
+          <span>Game Jams</span>
+        </article>
+      </section>
+
+      <section className="simple-section">
+        <div className="simple-strip-row">
+          <h2 className="simple-section-title">Featured Builds</h2>
+          <Link href="/simple/projects" className="simple-action simple-focus-ring">
+            Browse Archive
+          </Link>
+        </div>
+        <div className="simple-grid simple-grid-cols-3">
+          {featuredProjects.map((project) => (
+            <ProjectCard
+              key={project.id ?? project.name}
+              project={project}
+              hrefBase="/simple/projects"
+              hasCover={isPublicAssetAvailable(project.cover)}
+            />
+          ))}
         </div>
       </section>
 
-      {/* ─── Featured Work ─── */}
-      <section className="w-full px-8 py-24 bg-[var(--background)]">
-        <div className="max-w-7xl mx-auto">
-          <FadeInUp>
-            <div className="flex flex-col md:flex-row items-start md:items-end justify-between border-b-4 border-[var(--foreground)] pb-6 mb-12 gap-4">
-              <h2 className="font-playfair font-black text-5xl md:text-7xl uppercase tracking-tighter">
-                Featured Work
-              </h2>
-              <Link href="/simple/projects" className="font-inter font-bold uppercase tracking-widest text-sm hover:underline hover:text-[var(--color-primary)] flex items-center">
-                All Projects <ArrowUpRight className="ml-1" size={18}/>
-              </Link>
-            </div>
-          </FadeInUp>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-            {featuredProjects.map((project: any, index: number) => (
-              <FadeInUp key={project.id ?? project.name} delay={index * 0.1}>
-                <Link 
-                  href={`/simple/projects/${project.id ?? project.name.toLowerCase().replace(/\s+/g, "-")}`}
-                  className="group block brutal-card min-h-[400px] flex flex-col h-full"
-                >
-                  <div className="aspect-[4/3] md:aspect-video w-full border-b-4 border-[var(--foreground)] bg-[var(--foreground)] overflow-hidden relative">
-                    {project.cover ? (
-                      /* eslint-disable-next-line @next/next/no-img-element */
-                      <img 
-                        src={project.cover} 
-                        alt={project.name}
-                        className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-300"
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center font-playfair font-black text-4xl text-white/20 uppercase tracking-widest">
-                        {project.name}
-                      </div>
-                    )}
-                    {project.category && (
-                      <div className="absolute top-4 right-4 bg-[var(--color-primary)] border-2 border-[var(--foreground)] text-[var(--foreground)] font-inter font-bold text-xs uppercase px-3 py-1 shadow-[4px_4px_0px_var(--foreground)]">
-                        {project.category}
-                      </div>
-                    )}
-                  </div>
-                  <div className="p-6 md:p-8 bg-[var(--background)] flex-1 flex flex-col">
-                    <h3 className="font-playfair font-black text-3xl md:text-4xl uppercase tracking-tight mb-4 group-hover:text-[var(--color-primary)] transition-colors">
-                      {project.name}
-                    </h3>
-                    <p className="font-inter text-[var(--foreground)] line-clamp-3">
-                      {project.description}
-                    </p>
-                  </div>
-                </Link>
-              </FadeInUp>
-            ))}
-          </div>
+      <section className="simple-section">
+        <div className="simple-strip-row">
+          <h2 className="simple-section-title">Latest Writing</h2>
+          <Link href="/simple/blog" className="simple-action simple-focus-ring">
+            Read Blog
+          </Link>
+        </div>
+        <div className="simple-grid simple-grid-cols-2">
+          {latestBlogs.map((blog) => (
+            <BlogCard key={blog.slug ?? blog.title} blog={blog} />
+          ))}
         </div>
       </section>
     </div>
