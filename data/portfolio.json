@@ -1358,5 +1358,113 @@
       "institution": "ITM Skills University, Mumbai",
       "expected": "Expected 2028"
     }
+  ],
+  "hireMe": {
+    "heading": "Hire Me For",
+    "availability": "Available for freelance, contract, and collaborative game projects. Open to part-time and full-time discussions.",
+    "mode": "Remote-first (India timezone), flexible for async global teams.",
+    "preferredProjects": [
+      "Gameplay systems and core loop design",
+      "Performance optimization and build stabilization",
+      "Mobile production and Play Store shipping",
+      "Game jam and rapid prototype execution"
+    ],
+    "services": [
+      {
+        "title": "Gameplay Systems",
+        "details": "Player controllers, state machines, combat/interaction loops, camera systems, and reusable core mechanics."
+      },
+      {
+        "title": "Optimization & Profiling",
+        "details": "FPS stabilization, memory/performance tuning, object pooling, runtime culling, and script refactoring."
+      },
+      {
+        "title": "Mobile Shipping",
+        "details": "Production-ready Android builds, store preparation, Play Services integration, and post-release iteration."
+      },
+      {
+        "title": "Technical Leadership",
+        "details": "Team-leading implementation flow, feature prioritization, architecture decisions, and milestone execution."
+      }
+    ]
+  },
+  "careerTimeline": [
+    {
+      "title": "Python (Pygame) Developer",
+      "organization": "Self-employed",
+      "period": "Apr 2023 - Jan 2025",
+      "type": "Independent Learning Track",
+      "location": "Remote",
+      "summary": "Started with Python fundamentals and transitioned into 2D game development using Pygame, building early playable projects and core programming confidence.",
+      "highlights": [
+        "Built foundational gameplay loops and input systems in Pygame.",
+        "Shipped early practice projects while learning rapid iteration habits."
+      ]
+    },
+    {
+      "title": "Android Game Development",
+      "organization": "TheCreativeIndividuals (Self-employed)",
+      "period": "Jul 2024 - Jan 2025",
+      "type": "Mobile Development Sprint",
+      "location": "Remote",
+      "summary": "Focused on Unity-based Android development and hypercasual design cycles, building multiple games quickly to sharpen production speed.",
+      "highlights": [
+        "Built 7 hypercasual games in a 7-day challenge.",
+        "Strengthened mobile control tuning and gameplay balancing workflows."
+      ]
+    },
+    {
+      "title": "Unity Developer Intern",
+      "organization": "Vyorius",
+      "period": "Oct 2024 - Jan 2025",
+      "type": "Internship",
+      "location": "Remote",
+      "summary": "Contributed as a Unity developer intern, supporting gameplay and simulation features while collaborating in a production team environment.",
+      "highlights": [
+        "Worked directly with team leadership on implementation tasks.",
+        "Improved cross-functional collaboration with design and product stakeholders."
+      ]
+    },
+    {
+      "title": "Founder",
+      "organization": "Stopwatch Games Studio",
+      "period": "Jul 2025 - Present",
+      "type": "Studio Leadership",
+      "location": "India (Remote)",
+      "summary": "Founded and lead Stopwatch Games, driving project direction from concept to launch with a focus on gameplay quality and shipping discipline.",
+      "highlights": [
+        "Leading technical implementation and game design direction.",
+        "Managing production flow from prototype to release-ready builds."
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Santhosh Raghavendran Rao",
+      "role": "Business Development Manager at Nexora Neo Solutions",
+      "relationship": "Managed Saurabh directly",
+      "date": "Aug 25, 2025",
+      "quote": "Saurabh quickly picked up new technologies, delivered clean and efficient code, and contributed across both front-end and back-end tasks with reliability and strong teamwork.",
+      "sourceUrl": "https://www.linkedin.com/in/saurabh-yadav-925a7527a/details/recommendations/",
+      "avatar": "/assets/testimonials/rao.png"
+    },
+    {
+      "name": "Abderrahman El Qadiri",
+      "role": "CoFounder, Developer, Designer, and Composer",
+      "relationship": "Worked with Saurabh on the same team",
+      "date": "Jun 26, 2025",
+      "quote": "Saurabh brings a rare blend of technical insight, creative vision, and leadership maturity. He consistently drives momentum through complex development cycles and team pressure.",
+      "sourceUrl": "https://www.linkedin.com/in/saurabh-yadav-925a7527a/details/recommendations/",
+      "avatar": "/assets/testimonials/qad.png"
+    },
+    {
+      "name": "Lineet Kayani",
+      "role": "Founder & CEO, Stork Career Launcher",
+      "relationship": "Worked with Saurabh on the same team",
+      "date": "Jun 19, 2025",
+      "quote": "Saurabh followed direction effectively and helped transform team ideas into a well-built website/landing page, showing dependable execution and ownership in internship work.",
+      "sourceUrl": "https://www.linkedin.com/in/saurabh-yadav-925a7527a/details/recommendations/",
+      "avatar": "/assets/testimonials/jineet.png"
+    }
   ]
 }

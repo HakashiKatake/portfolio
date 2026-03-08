@@ -9,6 +9,7 @@ import { RETRO_CARD_PROPS } from "@/components/simple-site/theme";
 export default function ContactPage() {
   const data = getPortfolioData();
   const resumes = data.resumes ?? [];
+  const hireMe = data.hireMe;
   const focusRows = (data.skills ?? []).slice(0, 4).map((skill) => ({
     label: skill.name,
     value: skill.description ?? skill.level,
@@ -86,15 +87,30 @@ export default function ContactPage() {
         <Reveal>
           <Card {...RETRO_CARD_PROPS} className="simple-retro-card">
             <div className="simple-card-content">
-              <h2 className="simple-section-title">Collaboration Focus</h2>
-              <div className="simple-strip">
-                {focusRows.map((row) => (
-                  <div key={row.label} className="simple-strip-row">
-                    <span>{row.label}</span>
-                    <span>{row.value}</span>
+              <h2 className="simple-section-title">{hireMe?.heading ?? "Collaboration Focus"}</h2>
+              {hireMe ? (
+                <>
+                  <p className="simple-card-text">{hireMe.availability}</p>
+                  {hireMe.mode ? <p className="simple-card-text">{hireMe.mode}</p> : null}
+                  <div className="simple-grid simple-grid-cols-2">
+                    {hireMe.services.map((service) => (
+                      <div key={service.title} className="simple-learning-block">
+                        <p className="simple-kicker">{service.title}</p>
+                        <p className="simple-card-text">{service.details}</p>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                </>
+              ) : (
+                <div className="simple-strip">
+                  {focusRows.map((row) => (
+                    <div key={row.label} className="simple-strip-row">
+                      <span>{row.label}</span>
+                      <span>{row.value}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </Card>
         </Reveal>

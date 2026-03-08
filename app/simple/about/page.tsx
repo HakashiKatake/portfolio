@@ -10,6 +10,7 @@ import {
 import PageIntro from "@/components/simple-site/PageIntro";
 import Reveal from "@/components/simple-site/Reveal";
 import RetroLinkButton from "@/components/simple-site/RetroLinkButton";
+import TestimonialCard from "@/components/simple-site/TestimonialCard";
 import { getPortfolioData } from "@/data/loader";
 import { RETRO_CARD_PROPS, RETRO_THEME } from "@/components/simple-site/theme";
 
@@ -33,6 +34,8 @@ export default function AboutPage() {
   const education = data.education ?? [];
   const resumes = data.resumes ?? [];
   const highlights = data.resumeHighlights ?? [];
+  const careerTimeline = data.careerTimeline ?? [];
+  const testimonials = data.testimonials ?? [];
 
   return (
     <div>
@@ -52,6 +55,61 @@ export default function AboutPage() {
           </div>
         }
       />
+
+      {careerTimeline.length ? (
+        <section className="simple-section">
+          <Reveal>
+            <h2 className="simple-section-title">Career Timeline</h2>
+          </Reveal>
+          <div className="simple-career-timeline">
+            {careerTimeline.map((item, index) => (
+              <Reveal
+                key={`${item.title}-${item.period}`}
+                delay={index * 0.05}
+                className={index % 2 === 0 ? "simple-timeline-entry simple-timeline-entry-left" : "simple-timeline-entry simple-timeline-entry-right"}
+              >
+                <div className="simple-timeline-center" aria-hidden="true">
+                  <span className="simple-timeline-dot" />
+                </div>
+                <Card {...RETRO_CARD_PROPS} className="simple-retro-card simple-timeline-card">
+                  <div className="simple-card-content">
+                    <p className="simple-kicker">{item.period}</p>
+                    <h3 className="simple-card-title">
+                      {item.title} • {item.organization}
+                    </h3>
+                    <p className="simple-card-text">
+                      {[item.type, item.location].filter(Boolean).join(" • ")}
+                    </p>
+                    <p className="simple-card-text">{item.summary}</p>
+                    {item.highlights?.length ? (
+                      <ul className="simple-article-list">
+                        {item.highlights.map((point) => (
+                          <li key={point}>{point}</li>
+                        ))}
+                      </ul>
+                    ) : null}
+                  </div>
+                </Card>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      {testimonials.length ? (
+        <section className="simple-section simple-testimonial-showcase">
+          <Reveal>
+            <h2 className="simple-section-title">Recommendations</h2>
+          </Reveal>
+          <div className="simple-grid simple-grid-cols-2">
+            {testimonials.map((item, index) => (
+              <Reveal key={`${item.name}-${item.date ?? index}`} delay={index * 0.05}>
+                <TestimonialCard testimonial={item} />
+              </Reveal>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       {experience.length ? (
         <section className="simple-section">

@@ -132,6 +132,39 @@ export interface EducationItem {
   expected?: string;
 }
 
+export interface HireService {
+  title: string;
+  details: string;
+}
+
+export interface HireMe {
+  heading: string;
+  availability: string;
+  mode?: string;
+  preferredProjects?: string[];
+  services: HireService[];
+}
+
+export interface CareerTimelineItem {
+  title: string;
+  organization: string;
+  period: string;
+  location?: string;
+  type?: string;
+  summary: string;
+  highlights?: string[];
+}
+
+export interface Testimonial {
+  name: string;
+  role: string;
+  relationship?: string;
+  date?: string;
+  quote: string;
+  sourceUrl?: string;
+  avatar?: string;
+}
+
 export interface PortfolioData {
   meta?: Meta;
   name: string;
@@ -150,4 +183,7 @@ export interface PortfolioData {
   experience?: ExperienceItem[];
   certifications?: Certification[];
   education?: EducationItem[];
+  hireMe?: HireMe;
+  careerTimeline?: CareerTimelineItem[];
+  testimonials?: Testimonial[];
 }
