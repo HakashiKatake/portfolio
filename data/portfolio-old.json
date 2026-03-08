@@ -1,25 +1,10 @@
 {
-  "meta": {
-    "name": "Saurabh",
-    "title": "Game Developer",
-    "location": "Mumbai",
-    "palette": {
-      "primary": "#397367",
-      "accent": "#63CCCA",
-      "accent2": "#5DA399",
-      "muted": "#42858C",
-      "dark": "#35393C"
-    },
-    "resumeUrl": "/resume.pdf"
-  },
-
   "name": "Saurabh",
   "title": "Game Developer",
 
   "about": {
     "bio": "Game developer specializing in Unity, Godot and pixel art. Passionate about creating immersive experiences, retro-style games, and interactive storytelling.",
-    "location": "Mumbai",
-    "avatar": "/assets/avatar.svg"
+    "location": "Mumbai"
   },
 
   "skills": [
@@ -57,383 +42,193 @@
 
   "projects": [
     {
-      "id": "sky-racer",
       "name": "Sky Racer",
       "description": "A thrilling game where you navigate a car through 3D space with narrow roads. Tap to change direction as the road shifts — a test of quick reflexes and precise timing!",
       "engine": "Unity",
       "demo": "",
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7215980709327343616-UwmH",
-      "category": "mobile",
-      "platform": ["mobile"],
-      "tags": ["Unity", "3D", "Android"],
-      "role": "Sole developer — design, programming, audio integration",
-      "whatILearned": "Camera follow systems, infinite platform generation, responsive touch controls, and local high score storage via PlayerPrefs.",
-      "tools": ["Unity", "C#", "Blender"],
-      "year": 2024,
-      "cover": "/assets/projects/sky-racer.png",
-      "featured": true
+      "category": "mobile"
     },
     {
-      "id": "fast-ball",
       "name": "Fast Ball",
       "description": "A minimalistic hypercasual game where the score increases as you touch platforms and you die if you collide with enemies. Features main menu, scene management, and audio options.",
       "engine": "Unity",
       "demo": "",
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7216440560025255936-vl3h",
-      "category": "mobile",
-      "platform": ["mobile"],
-      "tags": ["Unity", "hypercasual"],
-      "role": "Solo developer — gameplay and UI",
-      "whatILearned": "Particle effects on object destruction, scene management, UI polish, and audio option menus.",
-      "tools": ["Unity", "C#"],
-      "year": 2024,
-      "cover": "/assets/projects/fast-ball.png",
-      "featured": false
+      "category": "mobile"
     },
     {
-      "id": "the-fish-master",
       "name": "TheFishMaster",
       "description": "A fishing game where the hook is cast for a certain length and catches fishes as it comes back. Features dragging mechanics, fish spawning at different water levels, and idle earning.",
       "engine": "Unity",
       "demo": "",
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7216825573266927618-q362",
-      "category": "mobile",
-      "platform": ["mobile"],
-      "tags": ["Unity", "idle", "Android"],
-      "role": "Solo developer — mechanics and game feel",
-      "whatILearned": "Dragging mechanics, entity spawning at different depths, and idle earning systems.",
-      "tools": ["Unity", "C#"],
-      "year": 2024,
-      "cover": "/assets/projects/the-fish-master.png",
-      "featured": false
+      "category": "mobile"
     },
     {
-      "id": "collect-it",
       "name": "Collect It!",
       "description": "Collect blobs to refill your energy bar before it depletes! Features touch-to-move, random blob spawning, and player bounce mechanics.",
       "engine": "Unity",
       "demo": "",
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7217208371249090560-Ykz4",
-      "category": "mobile",
-      "platform": ["mobile"],
-      "tags": ["Unity", "hypercasual"],
-      "role": "Solo developer",
-      "whatILearned": "Touch-to-move controls, random spawning patterns, energy-based gameplay loops, and bounce physics.",
-      "tools": ["Unity", "C#"],
-      "year": 2024,
-      "cover": "/assets/projects/collect-it.png",
-      "featured": false
+      "category": "mobile"
     },
     {
-      "id": "shinobi-runner",
       "name": "Shinobi Runner",
       "description": "A Naruto fan game with split-screen gameplay. Two characters dodge kunai knives — tap each side of the screen to dodge. If one dies, game over!",
       "engine": "Unity",
       "demo": "",
       "github": "",
       "linkedin": "",
-      "category": "mobile",
-      "platform": ["mobile"],
-      "tags": ["Unity", "split-screen", "fan-game"],
-      "role": "Solo developer — design and programming",
-      "whatILearned": "Split-screen gameplay, dodge mechanics, and working within fan-game design constraints.",
-      "tools": ["Unity", "C#"],
-      "year": 2024,
-      "cover": "/assets/projects/shinobi-runner.png",
-      "featured": false
+      "category": "mobile"
     },
     {
-      "id": "shoot-it",
       "name": "Shoot It!",
       "description": "A basketball game where you drag and shoot the ball into the post. Miss 3 shots and you're out! Features basketball physics, lives system, and 2D vector art.",
       "engine": "Unity",
       "demo": "",
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7217925216700682240-23HG",
-      "category": "mobile",
-      "platform": ["mobile"],
-      "tags": ["Unity", "sports", "2D"],
-      "role": "Solo developer — physics and art",
-      "whatILearned": "Basketball physics simulation, drag-and-shoot mechanics, lives system, and 2D vector art pipeline.",
-      "tools": ["Unity", "C#"],
-      "year": 2024,
-      "cover": "/assets/projects/shoot-it.png",
-      "featured": false
+      "category": "mobile"
     },
     {
-      "id": "donkey-kong-clone",
       "name": "Donkey Kong Clone",
       "description": "A recreation of the classic Donkey Kong game from Gameboy times! Features vertical climbing, barrel physics, level progression, pixel art, and animations.",
       "engine": "Unity",
       "demo": "",
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7218294902760062976-RdsH",
-      "category": "mobile",
-      "platform": ["mobile"],
-      "tags": ["Unity", "retro", "pixel-art"],
-      "role": "Solo developer — recreation and pixel art",
-      "whatILearned": "Classic game recreation methodology, barrel physics, level progression systems, and pixel art animation.",
-      "tools": ["Unity", "C#", "Aseprite"],
-      "year": 2024,
-      "cover": "/assets/projects/donkey-kong-clone.png",
-      "featured": true
+      "category": "mobile"
     },
     {
-      "id": "hotshot",
       "name": "Hotshot",
       "description": "A game made for Polymars x ScoreSpace Game Jam in 3 days. Built with a team of 4 across timezones. Features a leaderboard system and was submitted with just 10 minutes left!",
       "engine": "Unity",
       "demo": "https://henrylom.itch.io/hotshot",
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamejam-polymarsxscorespace-gamedev-activity-7223783393828732929-_Us1",
-      "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Unity", "jam", "multiplayer"],
-      "role": "Programmer in a team of 4 across timezones",
-      "whatILearned": "Remote collaboration under pressure, leaderboard systems, and delivering under extreme time constraints (submitted 10 min before deadline).",
-      "tools": ["Unity", "C#"],
-      "year": 2024,
-      "cover": "/assets/projects/hotshot.png",
-      "featured": true
+      "category": "gamejam"
     },
     {
-      "id": "squishy-sophie",
       "name": "Squishy Sophie",
       "description": "A puzzle platformer for GMTK Jam 2024. Play as Sophie the cat on a mission to reach the milk! Dodge dogs, eat fish to grow, avoid yarn balls. Theme: 'Built to Scale'.",
       "engine": "Unity",
       "demo": "https://henrylom.itch.io/squishy-sophie",
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gmtkjam2024-gamedev-squishysophie-activity-7232060317302710272-rbI4",
-      "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Unity", "puzzle", "platformer", "jam"],
-      "role": "Team lead — programming, team coordination, and art",
-      "whatILearned": "Rapid prioritization under time pressure, role swapping between code, design, and art, and effective code/design triage.",
-      "tools": ["Unity", "C#", "Aseprite"],
-      "year": 2024,
-      "cover": "/assets/projects/squishy-sophie.png",
-      "featured": true
+      "category": "gamejam"
     },
     {
-      "id": "crashed-ship",
       "name": "Crashed Ship",
       "description": "A space exploration game for the Mini Jam (4 days). Theme: 'Earth' with 'no green' constraint. Find scattered spaceship parts and repair your ship to return home!",
       "engine": "Unity",
       "demo": "https://henrylom.itch.io/crashed-ship",
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-gamejam-indiegames-activity-7236755431237316608-4rKm",
-      "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Unity", "exploration", "jam"],
-      "role": "Team developer — exploration mechanics and level design",
-      "whatILearned": "Working within creative constraints, space exploration mechanics, and item collection/inventory systems.",
-      "tools": ["Unity", "C#"],
-      "year": 2024,
-      "cover": "/assets/projects/crashed-ship.png",
-      "featured": false
+      "category": "gamejam"
     },
     {
-      "id": "joe-the-scammer",
       "name": "Joe the Scammer",
       "description": "A quirky game about a shark running a 'fishy' pawn shop, overpricing junk to sea creatures. Made for IndieDevGameJam5. Secured 7th place!",
       "engine": "Unity",
       "demo": "https://hakashi-katake.itch.io/joe-the-scammer",
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_indiedevgamejam5-a-journey-of-challenges-activity-7269743399518289920-_dQi",
-      "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Unity", "comedy", "economy", "jam"],
-      "role": "Developer — gameplay and economy design",
-      "whatILearned": "Economy balancing, quirky character-driven game design, and polishing for jam submission. Secured 7th place.",
-      "tools": ["Unity", "C#"],
-      "year": 2024,
-      "cover": "/assets/projects/joe-the-scammer.png",
-      "featured": true
+      "category": "gamejam"
     },
     {
-      "id": "bubble-chef",
       "name": "Bubble Chef",
       "description": "Global Game Jam 2025 entry. Play as a bubble-shaped chef catching ingredients to create Indian dishes like vada pav and pani puri! 3D visuals with chaotic cooking action.",
       "engine": "Unity",
       "demo": "https://hakashi-katake.itch.io/bubble-chef",
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-globalgamejam-bubblechef-activity-7289580014470127616-TjJP",
-      "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Unity", "3D", "cooking", "jam"],
-      "role": "Developer — 3D gameplay and input systems",
-      "whatILearned": "3D physics interactions, recipe/cooking game systems, and chaotic gameplay design under jam constraints.",
-      "tools": ["Unity", "C#"],
-      "year": 2025,
-      "cover": "/assets/projects/bubble-chef.png",
-      "featured": true
+      "category": "gamejam"
     },
     {
-      "id": "redacted-skies",
       "name": "Redacted Skies",
       "description": "A retro-inspired adventure about survival, speed, and determination. 3-day jam with 200+ entries. Placed 41st overall and 16th for best theme use!",
       "engine": "Unity",
       "demo": "https://hakashi-katake.itch.io/redactedskies",
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-indiegames-gamejam-activity-7296196381625520130-x4wD",
-      "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Unity", "retro", "adventure", "jam"],
-      "role": "Developer — retro design and gameplay",
-      "whatILearned": "Retro aesthetic design, speed-based gameplay mechanics. Placed 41st overall and 16th for best theme use out of 200+ entries.",
-      "tools": ["Unity", "C#", "Aseprite"],
-      "year": 2025,
-      "cover": "/assets/projects/redacted-skies.png",
-      "featured": false
+      "category": "gamejam"
     },
     {
-      "id": "knight-spade",
       "name": "Knight Spade",
       "description": "A card-based game for the Love Game Jam. Pick a card to get a random power-up and defeat the boss! 12th in graphics, 41st overall out of 400+ entries.",
       "engine": "Love2D (Lua)",
       "demo": "https://memo-dev.itch.io/knight-spade",
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-indiegames-gamejam-activity-7312465197351297025-Mp05",
-      "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Love2D", "Lua", "card-game", "jam"],
-      "role": "Developer — card mechanics and art",
-      "whatILearned": "Card-based power-up systems, boss fight design, and Love2D/Lua workflow. Placed 12th in graphics out of 400+ entries.",
-      "tools": ["Love2D", "Lua", "Aseprite"],
-      "year": 2025,
-      "cover": "/assets/projects/knight-spade.png",
-      "featured": true
+      "category": "gamejam"
     },
     {
-      "id": "glitch-in-the-grid",
       "name": "Glitch in the Grid",
       "description": "A fast-paced bullet-hell shooter for BulletHellJam. Grid-based combat with unique power-ups, dynamic enemy waves, and healing orbs. 30th out of 300+ entries!",
       "engine": "Love2D (Lua)",
       "demo": "https://hakashi-katake.itch.io/glitch-in-the-grid",
       "github": "",
       "linkedin": "",
-      "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Love2D", "Lua", "bullet-hell", "jam"],
-      "role": "Solo developer — design and programming",
-      "whatILearned": "Bullet-hell pattern design, grid-based combat systems, dynamic enemy wave generation, and healing/power-up mechanics.",
-      "tools": ["Love2D", "Lua"],
-      "year": 2025,
-      "cover": "/assets/projects/glitch-in-the-grid.png",
-      "featured": false
+      "category": "gamejam"
     },
     {
-      "id": "amnesia",
       "name": "Amnesia",
       "description": "A 3D horror game for a week-long jam. Wake up in an unfamiliar house, find clues, identify the impostor among faceless silhouettes. 90th out of 500+ entries!",
       "engine": "Godot",
       "demo": "https://xzo-00.itch.io/amnesia",
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-godot-gamejam-activity-7346076298416390144-b6jV",
-      "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Godot", "3D", "horror", "jam"],
-      "role": "Developer — 3D horror and narrative design",
-      "whatILearned": "3D horror game design in Godot, environmental storytelling, clue-based mystery mechanics. Placed 90th out of 500+ entries.",
-      "tools": ["Godot", "GDScript"],
-      "year": 2025,
-      "cover": "/assets/projects/amnesia.png",
-      "featured": false
+      "category": "gamejam"
     },
     {
-      "id": "deep-bound",
       "name": "Deep Bound",
       "description": "Made for GMTK Game Jam. An underwater survival game where dying doesn't end the run — it changes you. Built in 1.5 days, submitted 3 minutes before deadline!",
       "engine": "Unity",
       "demo": "https://hakashi-katake.itch.io/deepbound",
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-gmtkgamejam-indiedev-activity-7359929145352404993-QDWz",
-      "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Unity", "survival", "underwater", "jam"],
-      "role": "Developer — mechanics and game feel",
-      "whatILearned": "Death-as-mechanic design, underwater physics, and extreme time management (submitted 3 minutes before deadline).",
-      "tools": ["Unity", "C#"],
-      "year": 2025,
-      "cover": "/assets/projects/deep-bound.png",
-      "featured": false
+      "category": "gamejam"
     },
     {
-      "id": "stardew-valley-clone",
       "name": "Stardew Valley Clone",
       "description": "A farming-based game inspired by Stardew Valley, built while learning Godot. Exploring farming mechanics, character interactions, and charming world-building.",
       "engine": "Godot",
       "demo": "",
       "github": "https://github.com/HakashiKatake/Stardew-Clone",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-godot-learning-activity-7234254866653536256-uHHj",
-      "category": "personal",
-      "platform": ["pc"],
-      "tags": ["Godot", "farming", "simulation"],
-      "role": "Solo developer — learning Godot through recreation",
-      "whatILearned": "Farming mechanics, character interaction systems, world-building in Godot, and tile-based map design.",
-      "tools": ["Godot", "GDScript", "Aseprite"],
-      "year": 2024,
-      "cover": "/assets/projects/stardew-valley-clone.png",
-      "featured": true
+      "category": "personal"
     },
     {
-      "id": "game-in-every-language",
       "name": "Making a Game in Every Language",
       "description": "Building a playable game in every popular programming language — Python, C#, C++, Java, JS, TS, Lua, Rust, Go, Dart, Kotlin, Swift, Ruby and more!",
       "engine": "Multi-Language",
       "demo": "",
       "github": "https://github.com/HakashiKatake/Making-A-Game-In-Every-Language",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-polyglotcoding-pygame-activity-7328822712930340864-XABF",
-      "category": "personal",
-      "platform": ["pc"],
-      "tags": ["Python", "C#", "C++", "Java", "Lua", "Rust", "Go"],
-      "role": "Solo developer — polyglot game development",
-      "whatILearned": "Cross-language game development patterns, comparing engine and framework capabilities across ecosystems.",
-      "tools": ["Python", "C#", "C++", "Java", "JavaScript", "Lua", "Rust", "Go"],
-      "year": 2025,
-      "cover": "/assets/projects/game-in-every-language.png",
-      "featured": true
+      "category": "personal"
     }
   ],
 
   "blogs": [
     {
-      "slug": "game-design-patterns",
       "title": "Game Design with Game Programming Patterns",
       "description": "A deep dive into Game Programming Patterns by Robert Nystrom — covering Command, Observer, State, Component, Game Loop, and Flyweight patterns for building robust game systems.",
-      "date": "2024-08-15",
-      "tags": ["design-patterns", "programming", "game-architecture"],
-      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-designpatterns-programming-activity-7243287632925868032-Yssx",
-      "cover": "/assets/blog/game-design-patterns.svg"
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-designpatterns-programming-activity-7243287632925868032-Yssx"
     },
     {
-      "slug": "game-every-language-day1",
       "title": "Making a Game in Every Language — Day 1",
       "description": "Launching my dream project: building a playable game in every popular programming language. Day 1: Space Shooter in Python with Pygame!",
-      "date": "2025-01-20",
-      "tags": ["polyglot", "python", "pygame", "challenge"],
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-polyglotcoding-pygame-activity-7328822712930340864-XABF",
-      "github": "https://github.com/HakashiKatake/Making-A-Game-In-Every-Language",
-      "cover": "/assets/blog/game-every-language.svg"
+      "github": "https://github.com/HakashiKatake/Making-A-Game-In-Every-Language"
     }
   ],
 
-  "gameJams": [
-    { "name": "Polymars x ScoreSpace Game Jam", "project": "Hotshot", "role": "Programmer", "year": 2024, "result": "Completed" },
-    { "name": "GMTK Jam 2024", "project": "Squishy Sophie", "role": "Team Lead", "year": 2024, "result": "Completed" },
-    { "name": "Mini Jam", "project": "Crashed Ship", "role": "Developer", "year": 2024, "result": "Completed" },
-    { "name": "IndieDevGameJam5", "project": "Joe the Scammer", "role": "Developer", "year": 2024, "result": "7th Place" },
-    { "name": "Global Game Jam 2025", "project": "Bubble Chef", "role": "Developer", "year": 2025, "result": "Completed" },
-    { "name": "3-Day Jam", "project": "Redacted Skies", "role": "Developer", "year": 2025, "result": "41st / 16th Theme" },
-    { "name": "Love Game Jam", "project": "Knight Spade", "role": "Developer", "year": 2025, "result": "12th Graphics / 41st Overall" },
-    { "name": "BulletHellJam", "project": "Glitch in the Grid", "role": "Developer", "year": 2025, "result": "30th / 300+" },
-    { "name": "Week-long Horror Jam", "project": "Amnesia", "role": "Developer", "year": 2025, "result": "90th / 500+" },
-    { "name": "GMTK Game Jam 2025", "project": "Deep Bound", "role": "Developer", "year": 2025, "result": "Completed" }
-  ],
+  "gameJams": [],
 
   "achievements": [
     {

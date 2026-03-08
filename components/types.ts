@@ -1,3 +1,19 @@
+export interface Palette {
+  primary: string;
+  accent: string;
+  accent2: string;
+  muted: string;
+  dark: string;
+}
+
+export interface Meta {
+  name: string;
+  title: string;
+  location: string;
+  palette: Palette;
+  resumeUrl: string;
+}
+
 export interface Skill {
   name: string;
   level: string;
@@ -5,25 +21,47 @@ export interface Skill {
 }
 
 export interface Project {
+  // Core fields (used by both simple + interactive)
   name: string;
   description: string;
   engine: string;
+  category: "mobile" | "pc" | "gamejam" | "personal" | "tools";
+
+  // Interactive game fields
   demo: string;
   github: string;
   linkedin?: string;
-  category: "mobile" | "pc" | "gamejam" | "personal" | "tools";
+
+  // Simple portfolio extended fields
+  id?: string;
+  platform?: string[];
+  tags?: string[];
+  role?: string;
+  whatILearned?: string;
+  tools?: string[];
+  year?: number;
+  cover?: string;
+  featured?: boolean;
+  links?: { play?: string; github?: string; store?: string; linkedin?: string };
 }
 
 export interface Blog {
+  slug?: string;
   title: string;
   description: string;
+  date?: string;
+  tags?: string[];
   linkedin: string;
   github?: string;
+  cover?: string;
 }
 
 export interface GameJam {
   name: string;
   project: string;
+  role?: string;
+  year?: number;
+  result?: string;
 }
 
 export interface Achievement {
@@ -40,6 +78,7 @@ export interface Contact {
 export interface About {
   bio: string;
   location: string;
+  avatar?: string;
 }
 
 export interface NpcDialogues {
@@ -50,6 +89,7 @@ export interface NpcDialogues {
 }
 
 export interface PortfolioData {
+  meta?: Meta;
   name: string;
   title: string;
   about: About;
