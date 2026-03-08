@@ -12,10 +12,12 @@ interface SimpleShellProps {
 export default function SimpleShell({ data, children }: SimpleShellProps) {
   const name = data.meta?.name ?? data.name;
   const title = data.meta?.title ?? data.title;
+  const resumes = data.resumes ?? [{ label: "Resume", url: data.meta?.resumeUrl ?? "/resume.pdf" }];
 
   return (
     <div className="simple-shell">
       <div className="simple-starfield" aria-hidden="true" />
+      <div className="simple-retro-pattern" aria-hidden="true" />
 
       <header className="simple-header">
         <div className="simple-header-inner">
@@ -43,9 +45,11 @@ export default function SimpleShell({ data, children }: SimpleShellProps) {
 
           <div className="simple-footer-actions">
             <p>{name}</p>
-            <RetroLinkButton href={data.meta?.resumeUrl ?? "/resume.pdf"} variant="primary" newTab>
-              Resume
-            </RetroLinkButton>
+            {resumes.map((resume, index) => (
+              <RetroLinkButton key={`${resume.url}-${index}`} href={resume.url} variant={index === 0 ? "primary" : "secondary"} newTab>
+                {resume.label}
+              </RetroLinkButton>
+            ))}
           </div>
         </div>
       </footer>

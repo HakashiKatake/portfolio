@@ -1,61 +1,169 @@
 {
   "meta": {
-    "name": "Saurabh",
-    "title": "Game Developer",
-    "location": "Mumbai",
+    "name": "Saurabh Yadav",
+    "title": "Unity & Game Developer",
+    "location": "Mumbai, India",
     "palette": {
-      "primary": "#397367",
-      "accent": "#63CCCA",
-      "accent2": "#5DA399",
-      "muted": "#42858C",
-      "dark": "#35393C"
+      "primary": "#090816",
+      "accent": "#a855f7",
+      "accent2": "#7c3aed",
+      "muted": "#c4b5fd",
+      "dark": "#14113a"
     },
-    "resumeUrl": "/resume.pdf"
+    "resumeUrl": "/resumes/SaurabhYadav-UnityGameDeveloper.pdf"
   },
-
-  "name": "Saurabh",
-  "title": "Game Developer",
-
+  "name": "Saurabh Yadav",
+  "title": "Unity & Game Developer",
   "about": {
-    "bio": "Game developer specializing in Unity, Godot and pixel art. Passionate about creating immersive experiences, retro-style games, and interactive storytelling.",
-    "location": "Mumbai",
-    "avatar": "/assets/avatar.svg"
+    "bio": "Unity game developer with 2+ years of hands-on experience shipping 2D and 3D titles across Android and PC. I focus on gameplay programming, performance optimization, and modular systems that scale from prototype to live build.",
+    "location": "Mumbai, India",
+    "avatar": "/assets/me.png"
   },
-
   "skills": [
     {
-      "name": "Unity",
+      "name": "Unity Engine & C#",
       "level": "Advanced",
-      "description": "2D and 3D gameplay systems, physics, UI, and multiplayer"
+      "description": "Gameplay programming, game loops, player controllers, camera systems, and physics-driven mechanics."
     },
     {
-      "name": "Godot",
+      "name": "Performance Optimization",
       "level": "Advanced",
-      "description": "GDScript and C# game development, 2D platformers"
+      "description": "Profiling, object pooling, runtime culling, and script refactors for stable framerate targets."
     },
     {
-      "name": "Game Design",
+      "name": "Gameplay Systems",
       "level": "Advanced",
-      "description": "Level design, mechanics design, balancing, and playtesting"
+      "description": "State machines, event-driven architecture, inventory systems, and procedural gameplay logic."
     },
     {
-      "name": "Pixel Art",
+      "name": "AR/VR Simulation",
       "level": "Intermediate",
-      "description": "Character sprites, tilesets, and animation"
+      "description": "AR Foundation workflows and interaction features implemented during Unity internship projects."
     },
     {
-      "name": "C#",
-      "level": "Advanced",
-      "description": "Game scripting, tools, and editor extensions"
-    },
-    {
-      "name": "TypeScript",
+      "name": "Tools & Pipelines",
       "level": "Intermediate",
-      "description": "Web-based games and interactive experiences"
+      "description": "Git, Visual Studio, basic Blender and Photoshop integration for production-ready iteration."
+    },
+    {
+      "name": "Cross-Engine Development",
+      "level": "Intermediate",
+      "description": "Godot experimentation and game-jam development alongside Unity production workflows."
     }
   ],
-
   "projects": [
+    {
+      "id": "the-keyhole",
+      "name": "The Keyhole",
+      "description": "First-person horror project in development with inventory mechanics, event-driven scare logic, and procedural room generation.",
+      "engine": "Unity",
+      "demo": "",
+      "github": "",
+      "linkedin": "",
+      "category": "pc",
+      "platform": [
+        "pc",
+        "steam"
+      ],
+      "tags": [
+        "Unity",
+        "Horror",
+        "Procedural"
+      ],
+      "role": "Project Lead, Lead Programmer, and Game Design Lead",
+      "whatILearned": "Evolved a procedural horror concept with context-aware anomaly systems and branching narrative consequences.",
+      "tools": [
+        "Unity",
+        "C#"
+      ],
+      "year": 2026,
+      "cover": "",
+      "featured": true,
+      "learning": {
+        "concepts": [
+          "Procedural rooms blended with handcrafted high-stakes moments.",
+          "Context-aware anomaly generation based on behavior and room state.",
+          "Narrative replay paths driven by moral choices and memory fragments."
+        ],
+        "mechanics": [
+          "Exploration loop around keys, locked doors, and secret routes.",
+          "Anomalies that alter perception, movement, and environmental trust signals.",
+          "Sound/light/stealth triad as survival toolkit."
+        ],
+        "lessons": [
+          "Behavior-reactive horror systems increase replayability and tension depth."
+        ]
+      },
+      "links": {
+        "store": "https://store.steampowered.com/app/4120770/The_Keyhole/"
+      },
+      "engagement": "team",
+      "teamSize": 6,
+      "responsibilities": [
+        "Directed project from prototype phase to demo phase and launch track.",
+        "Led core programming architecture and feature execution.",
+        "Led game design direction and flow decisions.",
+        "Supported art and music production/integration."
+      ]
+    },
+    {
+      "id": "fasteroid",
+      "name": "Fasteroid",
+      "description": "Mobile arcade game shipped on Google Play with progression systems, player controls, and monetization-ready architecture.",
+      "engine": "Unity",
+      "demo": "https://play.google.com/store/apps/details?id=com.stopwatchgames.fasteroid",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7404400605240320001/",
+      "category": "mobile",
+      "platform": [
+        "android"
+      ],
+      "tags": [
+        "Unity",
+        "C#",
+        "Android",
+        "Google Play"
+      ],
+      "role": "Lead Programmer, Co-Director, and Game Design Lead",
+      "whatILearned": "Managed live mobile launch pipeline from monetization to services integration and validated retention with immediate user traction.",
+      "tools": [
+        "Unity",
+        "C#",
+        "Google Play Services",
+        "AdMob"
+      ],
+      "year": 2025,
+      "cover": "/assets/projects/fasteroid.png",
+      "featured": true,
+      "learning": {
+        "concepts": [
+          "Mobile ads integration flow.",
+          "Google Play services integration and leaderboard setup.",
+          "Production coordination for live release."
+        ],
+        "mechanics": [
+          "Tap-and-steer meteor control with speed-based scaling challenge.",
+          "Unlockable cosmetics and multiple visual sky themes."
+        ],
+        "lessons": [
+          "Launch readiness requires both technical and team-management discipline.",
+          "Monetization/integration quality impacts post-release stability."
+        ],
+        "results": [
+          "Crossed 1,000 downloads in less than 24 hours."
+        ]
+      },
+      "links": {
+        "store": "https://play.google.com/store/apps/details?id=com.stopwatchgames.fasteroid&pli=1"
+      },
+      "engagement": "team",
+      "teamSize": 5,
+      "responsibilities": [
+        "Led primary programming and systems integration.",
+        "Co-directed project execution and release priorities.",
+        "Led core game design and mechanic shaping for launch build."
+      ]
+    },
     {
       "id": "sky-racer",
       "name": "Sky Racer",
@@ -65,14 +173,52 @@
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7215980709327343616-UwmH",
       "category": "mobile",
-      "platform": ["mobile"],
-      "tags": ["Unity", "3D", "Android"],
-      "role": "Sole developer — design, programming, audio integration",
-      "whatILearned": "Camera follow systems, infinite platform generation, responsive touch controls, and local high score storage via PlayerPrefs.",
-      "tools": ["Unity", "C#", "Blender"],
+      "platform": [
+        "mobile"
+      ],
+      "tags": [
+        "Unity",
+        "3D",
+        "Android"
+      ],
+      "role": "Solo developer (learning-focused mobile project)",
+      "whatILearned": "Built a responsive ZigZag-inspired 3D runner with tighter controls, escalating difficulty, and procedural progression while handling full gameplay/audio loop solo.",
+      "tools": [
+        "Unity",
+        "C#",
+        "Blender"
+      ],
       "year": 2024,
       "cover": "/assets/projects/sky-racer.png",
-      "featured": true
+      "featured": true,
+      "learning": {
+        "concepts": [
+          "3D camera follow and smooth player tracking in Unity.",
+          "Local high score storage with PlayerPrefs.",
+          "Audio and SFX orchestration for gameplay events.",
+          "Infinite platform generation for endless gameplay.",
+          "3D model and animation integration."
+        ],
+        "challenges": [
+          "Designing stable infinite platform generation logic.",
+          "Working with 3D model pipeline and asset setup.",
+          "Tuning Unity particle system behavior for feedback."
+        ],
+        "mechanics": [
+          "Improved tap responsiveness compared to reference game feel.",
+          "Auto-changing backgrounds over time.",
+          "Speed scaling as score increases.",
+          "Animated diamond collectibles.",
+          "Difficulty ramp through terrain complexity."
+        ]
+      },
+      "engagement": "personal",
+      "teamSize": 1,
+      "responsibilities": [
+        "Programmed all gameplay systems end-to-end.",
+        "Designed the full game loop, progression, and balancing.",
+        "Handled implementation and iteration as a solo creator."
+      ]
     },
     {
       "id": "fast-ball",
@@ -83,14 +229,45 @@
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7216440560025255936-vl3h",
       "category": "mobile",
-      "platform": ["mobile"],
-      "tags": ["Unity", "hypercasual"],
-      "role": "Solo developer — gameplay and UI",
-      "whatILearned": "Particle effects on object destruction, scene management, UI polish, and audio option menus.",
-      "tools": ["Unity", "C#"],
+      "platform": [
+        "mobile"
+      ],
+      "tags": [
+        "Unity",
+        "hypercasual"
+      ],
+      "role": "Solo developer (learning-focused mobile project)",
+      "whatILearned": "Improved minimal hypercasual game feel through controlled spawning, particle-driven feedback, and cleaner scene/UI flow.",
+      "tools": [
+        "Unity",
+        "C#"
+      ],
       "year": 2024,
       "cover": "/assets/projects/fast-ball.png",
-      "featured": false
+      "featured": false,
+      "learning": {
+        "concepts": [
+          "Particle invocation on object destruction.",
+          "Text animation workflows in Unity.",
+          "Scene management for core game flow."
+        ],
+        "challenges": [
+          "Building good-feeling particle effects.",
+          "Balancing enemy spawn intervals to preserve player experience."
+        ],
+        "mechanics": [
+          "Main menu flow with scene transitions.",
+          "Audio mute/disable option.",
+          "Back to menu and quit controls."
+        ]
+      },
+      "engagement": "personal",
+      "teamSize": 1,
+      "responsibilities": [
+        "Built gameplay and state flow as sole programmer.",
+        "Designed the core hypercasual mechanics and pacing.",
+        "Owned full implementation and polish decisions."
+      ]
     },
     {
       "id": "the-fish-master",
@@ -101,14 +278,43 @@
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7216825573266927618-q362",
       "category": "mobile",
-      "platform": ["mobile"],
-      "tags": ["Unity", "idle", "Android"],
-      "role": "Solo developer — mechanics and game feel",
-      "whatILearned": "Dragging mechanics, entity spawning at different depths, and idle earning systems.",
-      "tools": ["Unity", "C#"],
+      "platform": [
+        "mobile"
+      ],
+      "tags": [
+        "Unity",
+        "idle",
+        "Android"
+      ],
+      "role": "Solo developer (learning-focused mobile project)",
+      "whatILearned": "Implemented touch dragging, depth-based fish spawning, and idle-style progression in a hook-return fishing loop.",
+      "tools": [
+        "Unity",
+        "C#"
+      ],
       "year": 2024,
       "cover": "/assets/projects/the-fish-master.png",
-      "featured": false
+      "featured": false,
+      "learning": {
+        "concepts": [
+          "Mobile drag interaction for hook control.",
+          "Scroll-like hook movement and return timing.",
+          "Fish spawning across multiple water depths.",
+          "Idle earning systems."
+        ],
+        "challenges": [
+          "Making drag behavior feel consistent on mobile.",
+          "Balancing spawn behavior by depth.",
+          "Implementing idle progression with Unity systems."
+        ]
+      },
+      "engagement": "personal",
+      "teamSize": 1,
+      "responsibilities": [
+        "Implemented full gameplay code and core systems solo.",
+        "Designed the fishing loop and progression logic.",
+        "Owned tuning and iteration of mechanics and feel."
+      ]
     },
     {
       "id": "collect-it",
@@ -119,14 +325,41 @@
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7217208371249090560-Ykz4",
       "category": "mobile",
-      "platform": ["mobile"],
-      "tags": ["Unity", "hypercasual"],
-      "role": "Solo developer",
-      "whatILearned": "Touch-to-move controls, random spawning patterns, energy-based gameplay loops, and bounce physics.",
-      "tools": ["Unity", "C#"],
+      "platform": [
+        "mobile"
+      ],
+      "tags": [
+        "Unity",
+        "hypercasual"
+      ],
+      "role": "Solo developer (learning-focused mobile project)",
+      "whatILearned": "Polished a clean energy-loop prototype with responsive touch movement, spawn pacing, and boundary bounce behavior.",
+      "tools": [
+        "Unity",
+        "C#"
+      ],
       "year": 2024,
       "cover": "/assets/projects/collect-it.png",
-      "featured": false
+      "featured": false,
+      "learning": {
+        "concepts": [
+          "Touch-to-move control loop.",
+          "Random collectible spawning logic.",
+          "Energy depletion over time as survival pressure.",
+          "Screen restrictions and bounce response."
+        ],
+        "challenges": [
+          "Finalizing bounce behavior against boundaries.",
+          "Maintaining control clarity while reusing assets."
+        ]
+      },
+      "engagement": "personal",
+      "teamSize": 1,
+      "responsibilities": [
+        "Programmed full game loop and controls as sole developer.",
+        "Designed mechanics, fail conditions, and balancing.",
+        "Managed technical implementation and polish solo."
+      ]
     },
     {
       "id": "shinobi-runner",
@@ -137,14 +370,36 @@
       "github": "",
       "linkedin": "",
       "category": "mobile",
-      "platform": ["mobile"],
-      "tags": ["Unity", "split-screen", "fan-game"],
+      "platform": [
+        "mobile"
+      ],
+      "tags": [
+        "Unity",
+        "split-screen",
+        "fan-game"
+      ],
       "role": "Solo developer — design and programming",
-      "whatILearned": "Split-screen gameplay, dodge mechanics, and working within fan-game design constraints.",
-      "tools": ["Unity", "C#"],
+      "whatILearned": "Shipped a split-screen mobile dodge prototype with dual touch zones, synchronized hazards, and adaptive layout.",
+      "tools": [
+        "Unity",
+        "C#"
+      ],
       "year": 2024,
       "cover": "/assets/projects/shinobi-runner.png",
-      "featured": false
+      "featured": false,
+      "learning": {
+        "concepts": [
+          "Per-side touch detection for two simultaneous players.",
+          "Infinite kunai spawn loop.",
+          "Vector sprite handling in Unity.",
+          "Responsive multi-device mobile layout."
+        ],
+        "challenges": [
+          "Dual-player touch control reliability.",
+          "Spawn distance and randomization tuning.",
+          "Collider setup for two active player lanes."
+        ]
+      }
     },
     {
       "id": "shoot-it",
@@ -155,14 +410,40 @@
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7217925216700682240-23HG",
       "category": "mobile",
-      "platform": ["mobile"],
-      "tags": ["Unity", "sports", "2D"],
+      "platform": [
+        "mobile"
+      ],
+      "tags": [
+        "Unity",
+        "sports",
+        "2D"
+      ],
       "role": "Solo developer — physics and art",
-      "whatILearned": "Basketball physics simulation, drag-and-shoot mechanics, lives system, and 2D vector art pipeline.",
-      "tools": ["Unity", "C#"],
+      "whatILearned": "Learned sports-arcade tuning by combining drag-shoot input, basketball physics, and life-based fail conditions.",
+      "tools": [
+        "Unity",
+        "C#"
+      ],
       "year": 2024,
       "cover": "/assets/projects/shoot-it.png",
-      "featured": false
+      "featured": false,
+      "learning": {
+        "concepts": [
+          "Drag-and-shoot input implementation.",
+          "Basketball-style trajectory/physics tuning.",
+          "Impact audio for court and contact events.",
+          "Lives system with clear UI state.",
+          "2D vector art pipeline handling."
+        ],
+        "challenges": [
+          "Understanding and tuning basketball physics.",
+          "Stabilizing drag-shoot trajectory behavior.",
+          "Managing 2D vector art integration."
+        ],
+        "lessons": [
+          "Identified future scope for multiplayer and additional modes after prototype completion."
+        ]
+      }
     },
     {
       "id": "donkey-kong-clone",
@@ -173,14 +454,45 @@
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-unity3d-androiddev-activity-7218294902760062976-RdsH",
       "category": "mobile",
-      "platform": ["mobile"],
-      "tags": ["Unity", "retro", "pixel-art"],
-      "role": "Solo developer — recreation and pixel art",
-      "whatILearned": "Classic game recreation methodology, barrel physics, level progression systems, and pixel art animation.",
-      "tools": ["Unity", "C#", "Aseprite"],
+      "platform": [
+        "mobile"
+      ],
+      "tags": [
+        "Unity",
+        "retro",
+        "pixel-art"
+      ],
+      "role": "Solo developer (personal recreation project)",
+      "whatILearned": "Recreated classic Donkey Kong-style gameplay under tight time constraints and strengthened retro-system implementation skills.",
+      "tools": [
+        "Unity",
+        "C#",
+        "Aseprite"
+      ],
       "year": 2024,
       "cover": "/assets/projects/donkey-kong-clone.png",
-      "featured": true
+      "featured": true,
+      "learning": {
+        "concepts": [
+          "Vertical climb flow and ladder traversal.",
+          "Barrel movement/interaction physics.",
+          "Level transitions in Unity.",
+          "Pixel-art workflow and frame timing.",
+          "Animation with frame-skip control."
+        ],
+        "challenges": [
+          "Reverse-engineering original game behavior.",
+          "Tuning barrel physics to feel authentic.",
+          "Managing pixel art and frame pacing constraints."
+        ]
+      },
+      "engagement": "personal",
+      "teamSize": 1,
+      "responsibilities": [
+        "Recreated gameplay systems and level flow in Unity.",
+        "Implemented controls, hazards, and progression solo.",
+        "Handled retro design adaptation and implementation decisions."
+      ]
     },
     {
       "id": "hotshot",
@@ -191,14 +503,47 @@
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamejam-polymarsxscorespace-gamedev-activity-7223783393828732929-_Us1",
       "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Unity", "jam", "multiplayer"],
-      "role": "Programmer in a team of 4 across timezones",
-      "whatILearned": "Remote collaboration under pressure, leaderboard systems, and delivering under extreme time constraints (submitted 10 min before deadline).",
-      "tools": ["Unity", "C#"],
+      "platform": [
+        "pc",
+        "web"
+      ],
+      "tags": [
+        "Unity",
+        "jam",
+        "multiplayer"
+      ],
+      "role": "Team Lead and Lead Programmer",
+      "whatILearned": "Delivered a team jam build under timezone constraints, implemented leaderboard work, and shipped minutes before deadline.",
+      "tools": [
+        "Unity",
+        "C#"
+      ],
       "year": 2024,
       "cover": "/assets/projects/hotshot.png",
-      "featured": true
+      "featured": true,
+      "learning": {
+        "lessons": [
+          "Cross-timezone planning requires explicit daily coordination.",
+          "Clear role ownership improves jam velocity.",
+          "Problem-solving under deadline pressure is a core production skill."
+        ],
+        "challenges": [
+          "Lost first day due to timezone overlap issues.",
+          "Leaderboard implementation complexity late in production.",
+          "Last-minute stabilization and submission with 10 minutes left."
+        ],
+        "results": [
+          "Submitted successfully in final 10 minutes after 3-day jam sprint."
+        ]
+      },
+      "engagement": "team",
+      "teamSize": 4,
+      "responsibilities": [
+        "Led team execution and production flow during jam timeline.",
+        "Owned core programming decisions and primary gameplay implementation.",
+        "Integrated online leaderboard systems.",
+        "Contributed to art tasks where needed."
+      ]
     },
     {
       "id": "squishy-sophie",
@@ -209,14 +554,42 @@
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gmtkjam2024-gamedev-squishysophie-activity-7232060317302710272-rbI4",
       "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Unity", "puzzle", "platformer", "jam"],
+      "platform": [
+        "pc",
+        "web"
+      ],
+      "tags": [
+        "Unity",
+        "puzzle",
+        "platformer",
+        "jam"
+      ],
       "role": "Team lead — programming, team coordination, and art",
-      "whatILearned": "Rapid prioritization under time pressure, role swapping between code, design, and art, and effective code/design triage.",
-      "tools": ["Unity", "C#", "Aseprite"],
+      "whatILearned": "Handled team leadership, programming, and art trade-offs while cutting risky scope to ship a stable jam entry.",
+      "tools": [
+        "Unity",
+        "C#",
+        "Aseprite"
+      ],
       "year": 2024,
       "cover": "/assets/projects/squishy-sophie.png",
-      "featured": true
+      "featured": true,
+      "learning": {
+        "lessons": [
+          "Frequent progress checks are essential when leading larger jam teams.",
+          "If a feature exceeds feasible time budget, cut or redesign quickly.",
+          "Aseprite tooling shortcuts dramatically improve asset turnaround."
+        ],
+        "challenges": [
+          "Scrapped squeeze/stretch mechanic due to bugs and time cost.",
+          "Removed four levels after a critical bug to preserve overall stability.",
+          "Submission issues resolved in final minutes."
+        ],
+        "mechanics": [
+          "Scale-driven cat progression loop (growth/shrink risk-reward).",
+          "Hazard/collectible interaction balancing under scope pressure."
+        ]
+      }
     },
     {
       "id": "crashed-ship",
@@ -227,14 +600,48 @@
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-gamejam-indiegames-activity-7236755431237316608-4rKm",
       "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Unity", "exploration", "jam"],
-      "role": "Team developer — exploration mechanics and level design",
-      "whatILearned": "Working within creative constraints, space exploration mechanics, and item collection/inventory systems.",
-      "tools": ["Unity", "C#"],
+      "platform": [
+        "pc",
+        "web"
+      ],
+      "tags": [
+        "Unity",
+        "exploration",
+        "jam"
+      ],
+      "role": "Team Lead and Lead Programmer",
+      "whatILearned": "Built a complete jam loop under a strict visual constraint and improved prioritization, communication, and rapid iteration habits.",
+      "tools": [
+        "Unity",
+        "C#"
+      ],
       "year": 2024,
       "cover": "/assets/projects/crashed-ship.png",
-      "featured": false
+      "featured": false,
+      "learning": {
+        "concepts": [
+          "Player navigation and interaction loop in exploration context.",
+          "Collectible parts system tied to repair objective.",
+          "Constraint-driven visual direction for theme adaptation."
+        ],
+        "challenges": [
+          "Delivering full loop within 4-day schedule.",
+          "Balancing scope across mechanics, art, and polish."
+        ],
+        "lessons": [
+          "Constraints can unlock stronger creative direction.",
+          "Knowing when to move on is critical in short jams.",
+          "Team communication quality directly affects execution speed."
+        ]
+      },
+      "engagement": "team",
+      "teamSize": 5,
+      "responsibilities": [
+        "Directed team flow and milestone planning.",
+        "Led gameplay programming and technical integration.",
+        "Contributed to pixel art production.",
+        "Contributed to music/audio support for the project."
+      ]
     },
     {
       "id": "joe-the-scammer",
@@ -245,14 +652,47 @@
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_indiedevgamejam5-a-journey-of-challenges-activity-7269743399518289920-_dQi",
       "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Unity", "comedy", "economy", "jam"],
-      "role": "Developer — gameplay and economy design",
-      "whatILearned": "Economy balancing, quirky character-driven game design, and polishing for jam submission. Secured 7th place.",
-      "tools": ["Unity", "C#"],
+      "platform": [
+        "pc",
+        "web"
+      ],
+      "tags": [
+        "Unity",
+        "comedy",
+        "economy",
+        "jam"
+      ],
+      "role": "Team Lead and Lead Programmer",
+      "whatILearned": "Improved branch-based collaboration and art/style consistency while shipping a polished comedic economy loop.",
+      "tools": [
+        "Unity",
+        "C#"
+      ],
       "year": 2024,
       "cover": "/assets/projects/joe-the-scammer.png",
-      "featured": true
+      "featured": true,
+      "learning": {
+        "concepts": [
+          "Dialogue-driven pawn-shop gameplay loop.",
+          "Economy-flavored interaction design with humor framing."
+        ],
+        "lessons": [
+          "GitHub branch workflow reduced merge friction in team jam.",
+          "Maintaining style consistency is harder with reduced art bandwidth.",
+          "Structured task coordination kept team aligned to deadline."
+        ],
+        "results": [
+          "Uploaded 3 hours before deadline and secured 7th place."
+        ]
+      },
+      "engagement": "team",
+      "teamSize": 5,
+      "responsibilities": [
+        "Led team execution and delivery strategy.",
+        "Handled primary gameplay/programming responsibilities.",
+        "Supported pixel art work where needed.",
+        "Contributed to music/audio implementation support."
+      ]
     },
     {
       "id": "bubble-chef",
@@ -263,14 +703,36 @@
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-globalgamejam-bubblechef-activity-7289580014470127616-TjJP",
       "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Unity", "3D", "cooking", "jam"],
+      "platform": [
+        "pc",
+        "web"
+      ],
+      "tags": [
+        "Unity",
+        "3D",
+        "cooking",
+        "jam"
+      ],
       "role": "Developer — 3D gameplay and input systems",
-      "whatILearned": "3D physics interactions, recipe/cooking game systems, and chaotic gameplay design under jam constraints.",
-      "tools": ["Unity", "C#"],
+      "whatILearned": "Shipped a hybrid remote/on-site jam project and strengthened high-pressure collaboration, task triage, and mechanic debugging.",
+      "tools": [
+        "Unity",
+        "C#"
+      ],
       "year": 2025,
       "cover": "/assets/projects/bubble-chef.png",
-      "featured": true
+      "featured": true,
+      "learning": {
+        "mechanics": [
+          "Bubble-based ingredient catch loop with recipe assembly pressure.",
+          "Penalty conditions for wrong ingredient catches and bubble loss."
+        ],
+        "lessons": [
+          "Hybrid team setup can work with disciplined communication.",
+          "Tight task/resource planning is mandatory in short jams.",
+          "Rapid debug/iteration cycles improve final game feel."
+        ]
+      }
     },
     {
       "id": "redacted-skies",
@@ -281,14 +743,39 @@
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-indiegames-gamejam-activity-7296196381625520130-x4wD",
       "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Unity", "retro", "adventure", "jam"],
+      "platform": [
+        "pc",
+        "web"
+      ],
+      "tags": [
+        "Unity",
+        "retro",
+        "adventure",
+        "jam"
+      ],
       "role": "Developer — retro design and gameplay",
-      "whatILearned": "Retro aesthetic design, speed-based gameplay mechanics. Placed 41st overall and 16th for best theme use out of 200+ entries.",
-      "tools": ["Unity", "C#", "Aseprite"],
+      "whatILearned": "Coordinated rapid build cadence across design, code, and polish to deliver a ranked retro-action jam project.",
+      "tools": [
+        "Unity",
+        "C#",
+        "Aseprite"
+      ],
       "year": 2025,
       "cover": "/assets/projects/redacted-skies.png",
-      "featured": false
+      "featured": false,
+      "learning": {
+        "concepts": [
+          "Story-first framing for jam scope alignment.",
+          "High-speed evasion mechanics (fighter jets and homing threats)."
+        ],
+        "lessons": [
+          "Focused collaboration under short windows compounds quality.",
+          "Final-day bug fixing and polish often define ranking outcomes."
+        ],
+        "results": [
+          "Placed 41st overall and 16th for best theme use out of 200+ entries."
+        ]
+      }
     },
     {
       "id": "knight-spade",
@@ -299,14 +786,47 @@
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-indiegames-gamejam-activity-7312465197351297025-Mp05",
       "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Love2D", "Lua", "card-game", "jam"],
-      "role": "Developer — card mechanics and art",
-      "whatILearned": "Card-based power-up systems, boss fight design, and Love2D/Lua workflow. Placed 12th in graphics out of 400+ entries.",
-      "tools": ["Love2D", "Lua", "Aseprite"],
+      "platform": [
+        "pc",
+        "web"
+      ],
+      "tags": [
+        "Love2D",
+        "Lua",
+        "card-game",
+        "jam"
+      ],
+      "role": "Team Lead and Lead Lua Programmer",
+      "whatILearned": "Expanded beyond Unity comfort zone, built in Love2D/Lua, and designed replayable card-driven combat progression.",
+      "tools": [
+        "Love2D",
+        "Lua",
+        "Aseprite"
+      ],
       "year": 2025,
       "cover": "/assets/projects/knight-spade.png",
-      "featured": true
+      "featured": true,
+      "learning": {
+        "mechanics": [
+          "Random card selection at run start determines power-up path.",
+          "Boss progression driven by card-selected build variance."
+        ],
+        "lessons": [
+          "Switching frameworks opens new problem-solving approaches.",
+          "Community-driven jams accelerate adaptation to unfamiliar stacks."
+        ],
+        "results": [
+          "Placed 12th in graphics and 41st overall among 400+ entries."
+        ]
+      },
+      "engagement": "team",
+      "teamSize": 4,
+      "responsibilities": [
+        "Led overall game flow and team coordination.",
+        "Owned primary Lua/Love2D programming tasks.",
+        "Co-led game design direction and gameplay decisions.",
+        "Contributed to music/audio support."
+      ]
     },
     {
       "id": "glitch-in-the-grid",
@@ -317,14 +837,47 @@
       "github": "",
       "linkedin": "",
       "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Love2D", "Lua", "bullet-hell", "jam"],
-      "role": "Solo developer — design and programming",
-      "whatILearned": "Bullet-hell pattern design, grid-based combat systems, dynamic enemy wave generation, and healing/power-up mechanics.",
-      "tools": ["Love2D", "Lua"],
+      "platform": [
+        "pc",
+        "web"
+      ],
+      "tags": [
+        "Love2D",
+        "Lua",
+        "bullet-hell",
+        "jam"
+      ],
+      "role": "Team Lead and Lead Lua Programmer",
+      "whatILearned": "Built and polished a competitive bullet-hell loop in 5 focused days, proving execution quality under compressed timelines.",
+      "tools": [
+        "Love2D",
+        "Lua"
+      ],
       "year": 2025,
       "cover": "/assets/projects/glitch-in-the-grid.png",
-      "featured": false
+      "featured": false,
+      "learning": {
+        "mechanics": [
+          "Grid-based fast combat with escalating bullet patterns.",
+          "Power-up system: Guardian Shield, Nuke, Rapid Fire.",
+          "Dynamic wave scaling and healing-orb clutch recoveries."
+        ],
+        "lessons": [
+          "Focused scope and polish can outperform longer timelines.",
+          "Tight controls and clarity are core to bullet-hell satisfaction."
+        ],
+        "results": [
+          "Placed 30th out of 300+ entries in BulletHellJam."
+        ]
+      },
+      "engagement": "team",
+      "teamSize": 3,
+      "responsibilities": [
+        "Led production flow and task coordination across team.",
+        "Owned core Lua/Love2D gameplay programming.",
+        "Contributed to game design and pacing decisions.",
+        "Contributed to music/audio support."
+      ]
     },
     {
       "id": "amnesia",
@@ -335,14 +888,45 @@
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-godot-gamejam-activity-7346076298416390144-b6jV",
       "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Godot", "3D", "horror", "jam"],
-      "role": "Developer — 3D horror and narrative design",
-      "whatILearned": "3D horror game design in Godot, environmental storytelling, clue-based mystery mechanics. Placed 90th out of 500+ entries.",
-      "tools": ["Godot", "GDScript"],
+      "platform": [
+        "pc",
+        "web"
+      ],
+      "tags": [
+        "Godot",
+        "3D",
+        "horror",
+        "jam"
+      ],
+      "role": "Lead Godot (GDScript) Programmer and Game Design Contributor",
+      "whatILearned": "Implemented a clue-driven psychological horror loop in Godot with branching outcomes and high-pressure production discipline.",
+      "tools": [
+        "Godot",
+        "GDScript"
+      ],
       "year": 2025,
       "cover": "/assets/projects/amnesia.png",
-      "featured": false
+      "featured": false,
+      "learning": {
+        "mechanics": [
+          "Timed clue collection phase followed by impostor-guess resolution.",
+          "Dialogue contradiction detection tied to discovered clues.",
+          "Multiple unsettling endings based on player choice."
+        ],
+        "lessons": [
+          "Atmosphere and audio design are critical force multipliers in horror.",
+          "Strong core loop design matters more than raw content volume in jam scope."
+        ],
+        "results": [
+          "Placed 90th out of 500+ entries (70th in music, 21 positive ratings)."
+        ]
+      },
+      "engagement": "team",
+      "responsibilities": [
+        "Led Godot/GDScript gameplay implementation.",
+        "Played a major role in core game design direction.",
+        "Drove technical decisions for horror loop execution."
+      ]
     },
     {
       "id": "deep-bound",
@@ -353,14 +937,50 @@
       "github": "",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-gmtkgamejam-indiedev-activity-7359929145352404993-QDWz",
       "category": "gamejam",
-      "platform": ["pc", "web"],
-      "tags": ["Unity", "survival", "underwater", "jam"],
-      "role": "Developer — mechanics and game feel",
-      "whatILearned": "Death-as-mechanic design, underwater physics, and extreme time management (submitted 3 minutes before deadline).",
-      "tools": ["Unity", "C#"],
+      "platform": [
+        "pc",
+        "web"
+      ],
+      "tags": [
+        "Unity",
+        "survival",
+        "underwater",
+        "jam"
+      ],
+      "role": "Team Lead and Lead Programmer",
+      "whatILearned": "Shipped a high-concept role-reversal survival prototype after starting late, while handling merge conflicts and deadline risk.",
+      "tools": [
+        "Unity",
+        "C#"
+      ],
       "year": 2025,
       "cover": "/assets/projects/deep-bound.png",
-      "featured": false
+      "featured": false,
+      "learning": {
+        "mechanics": [
+          "Death changes role/state instead of ending run.",
+          "Human-vs-spirit phase flow with timed intermission and underwater pressure loop."
+        ],
+        "challenges": [
+          "Started development at end of day 2 with ~1.5 days left.",
+          "Resolved GitHub merge conflicts near submission window."
+        ],
+        "lessons": [
+          "Rapid prototyping and role-swapping accelerate jam delivery.",
+          "Shipping under pressure requires aggressive decision-making."
+        ],
+        "results": [
+          "Submitted 3 minutes before deadline."
+        ]
+      },
+      "engagement": "team",
+      "teamSize": 4,
+      "responsibilities": [
+        "Led team delivery under extreme jam constraints.",
+        "Owned primary programming responsibilities.",
+        "Contributed the largest share of game design decisions.",
+        "Directed implementation priorities while managing team flow."
+      ]
     },
     {
       "id": "stardew-valley-clone",
@@ -371,14 +991,34 @@
       "github": "https://github.com/HakashiKatake/Stardew-Clone",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-godot-learning-activity-7234254866653536256-uHHj",
       "category": "personal",
-      "platform": ["pc"],
-      "tags": ["Godot", "farming", "simulation"],
+      "platform": [
+        "pc"
+      ],
+      "tags": [
+        "Godot",
+        "farming",
+        "simulation"
+      ],
       "role": "Solo developer — learning Godot through recreation",
-      "whatILearned": "Farming mechanics, character interaction systems, world-building in Godot, and tile-based map design.",
-      "tools": ["Godot", "GDScript", "Aseprite"],
+      "whatILearned": "Used this project to onboard into Godot: tilemaps, GDScript workflow, and early farming/interaction systems.",
+      "tools": [
+        "Godot",
+        "GDScript",
+        "Aseprite"
+      ],
       "year": 2024,
       "cover": "/assets/projects/stardew-valley-clone.png",
-      "featured": true
+      "featured": true,
+      "learning": {
+        "concepts": [
+          "Godot tile sets and tilemaps for reusable world building.",
+          "GDScript fundamentals and Python-like scripting flow.",
+          "Farming and interaction loop prototyping."
+        ],
+        "lessons": [
+          "Engine migration improves design perspective and tool adaptability."
+        ]
+      }
     },
     {
       "id": "game-in-every-language",
@@ -389,24 +1029,105 @@
       "github": "https://github.com/HakashiKatake/Making-A-Game-In-Every-Language",
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-polyglotcoding-pygame-activity-7328822712930340864-XABF",
       "category": "personal",
-      "platform": ["pc"],
-      "tags": ["Python", "C#", "C++", "Java", "Lua", "Rust", "Go"],
+      "platform": [
+        "pc"
+      ],
+      "tags": [
+        "Python",
+        "C#",
+        "C++",
+        "Java",
+        "Lua",
+        "Rust",
+        "Go"
+      ],
       "role": "Solo developer — polyglot game development",
-      "whatILearned": "Cross-language game development patterns, comparing engine and framework capabilities across ecosystems.",
-      "tools": ["Python", "C#", "C++", "Java", "JavaScript", "Lua", "Rust", "Go"],
+      "whatILearned": "Designed a long-horizon polyglot learning system to compare gameplay architecture across languages, engines, and paradigms.",
+      "tools": [
+        "Python",
+        "C#",
+        "C++",
+        "Java",
+        "JavaScript",
+        "Lua",
+        "Rust",
+        "Go"
+      ],
       "year": 2025,
       "cover": "/assets/projects/game-in-every-language.png",
-      "featured": true
+      "featured": true,
+      "learning": {
+        "concepts": [
+          "Cross-language game-loop implementation patterns.",
+          "Framework trade-offs across Python, Unity/C#, C++, Java, JS/TS, Lua, Rust, Go, Dart, Kotlin, Swift, and Ruby ecosystems."
+        ],
+        "lessons": [
+          "Language diversity strengthens architecture thinking and portability decisions.",
+          "Reusable core mechanics expose engine-specific strengths/limitations quickly."
+        ]
+      }
+    },
+    {
+      "id": "terrific-traffic",
+      "name": "Terrific Traffic",
+      "description": "Upcoming hypercasual arcade project where you play as a chaos manager at a 4-way intersection and strategically delete traffic while preserving reputation.",
+      "engine": "Unity",
+      "demo": "",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-indiedev-mobilegames-activity-7413612285837103104-Acci",
+      "category": "mobile",
+      "platform": [
+        "mobile",
+        "android"
+      ],
+      "tags": [
+        "Unity",
+        "Hypercasual",
+        "Traffic",
+        "Mobile"
+      ],
+      "role": "Team Lead, Lead Programmer, and Game Design Lead",
+      "whatILearned": "Prototype-first development helped validate a novel traffic-chaos mechanic where every destructive action is balanced by a reputation economy.",
+      "tools": [
+        "Unity",
+        "C#"
+      ],
+      "year": 2026,
+      "cover": "",
+      "featured": false,
+      "learning": {
+        "concepts": [
+          "Risk-reward loop design around reputation cost.",
+          "Intersection pressure modeling in hypercasual pacing."
+        ],
+        "mechanics": [
+          "Tap-to-delete traffic as primary interaction model.",
+          "Reputation as fail-state pressure instead of traditional health/lives."
+        ],
+        "lessons": [
+          "A strong one-line hook can drive clearer prototype decisions early."
+        ]
+      },
+      "engagement": "team",
+      "teamSize": 3,
+      "responsibilities": [
+        "Leading team execution and production direction.",
+        "Owning primary programming and systems implementation.",
+        "Leading game design and flow decisions from prototype onward."
+      ]
     }
   ],
-
   "blogs": [
     {
       "slug": "game-design-patterns",
       "title": "Game Design with Game Programming Patterns",
       "description": "A deep dive into Game Programming Patterns by Robert Nystrom — covering Command, Observer, State, Component, Game Loop, and Flyweight patterns for building robust game systems.",
       "date": "2024-08-15",
-      "tags": ["design-patterns", "programming", "game-architecture"],
+      "tags": [
+        "design-patterns",
+        "programming",
+        "game-architecture"
+      ],
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedevelopment-designpatterns-programming-activity-7243287632925868032-Yssx",
       "cover": "/assets/blog/game-design-patterns.svg"
     },
@@ -415,26 +1136,89 @@
       "title": "Making a Game in Every Language — Day 1",
       "description": "Launching my dream project: building a playable game in every popular programming language. Day 1: Space Shooter in Python with Pygame!",
       "date": "2025-01-20",
-      "tags": ["polyglot", "python", "pygame", "challenge"],
+      "tags": [
+        "polyglot",
+        "python",
+        "pygame",
+        "challenge"
+      ],
       "linkedin": "https://www.linkedin.com/posts/saurabh-yadav-925a7527a_gamedev-polyglotcoding-pygame-activity-7328822712930340864-XABF",
       "github": "https://github.com/HakashiKatake/Making-A-Game-In-Every-Language",
       "cover": "/assets/blog/game-every-language.svg"
     }
   ],
-
   "gameJams": [
-    { "name": "Polymars x ScoreSpace Game Jam", "project": "Hotshot", "role": "Programmer", "year": 2024, "result": "Completed" },
-    { "name": "GMTK Jam 2024", "project": "Squishy Sophie", "role": "Team Lead", "year": 2024, "result": "Completed" },
-    { "name": "Mini Jam", "project": "Crashed Ship", "role": "Developer", "year": 2024, "result": "Completed" },
-    { "name": "IndieDevGameJam5", "project": "Joe the Scammer", "role": "Developer", "year": 2024, "result": "7th Place" },
-    { "name": "Global Game Jam 2025", "project": "Bubble Chef", "role": "Developer", "year": 2025, "result": "Completed" },
-    { "name": "3-Day Jam", "project": "Redacted Skies", "role": "Developer", "year": 2025, "result": "41st / 16th Theme" },
-    { "name": "Love Game Jam", "project": "Knight Spade", "role": "Developer", "year": 2025, "result": "12th Graphics / 41st Overall" },
-    { "name": "BulletHellJam", "project": "Glitch in the Grid", "role": "Developer", "year": 2025, "result": "30th / 300+" },
-    { "name": "Week-long Horror Jam", "project": "Amnesia", "role": "Developer", "year": 2025, "result": "90th / 500+" },
-    { "name": "GMTK Game Jam 2025", "project": "Deep Bound", "role": "Developer", "year": 2025, "result": "Completed" }
+    {
+      "name": "Polymars x ScoreSpace Game Jam",
+      "project": "Hotshot",
+      "role": "Programmer",
+      "year": 2024,
+      "result": "Completed"
+    },
+    {
+      "name": "GMTK Jam 2024",
+      "project": "Squishy Sophie",
+      "role": "Team Lead",
+      "year": 2024,
+      "result": "Completed"
+    },
+    {
+      "name": "Mini Jam",
+      "project": "Crashed Ship",
+      "role": "Developer",
+      "year": 2024,
+      "result": "Completed"
+    },
+    {
+      "name": "IndieDevGameJam5",
+      "project": "Joe the Scammer",
+      "role": "Developer",
+      "year": 2024,
+      "result": "7th Place"
+    },
+    {
+      "name": "Global Game Jam 2025",
+      "project": "Bubble Chef",
+      "role": "Developer",
+      "year": 2025,
+      "result": "Completed"
+    },
+    {
+      "name": "3-Day Jam",
+      "project": "Redacted Skies",
+      "role": "Developer",
+      "year": 2025,
+      "result": "41st / 16th Theme"
+    },
+    {
+      "name": "Love Game Jam",
+      "project": "Knight Spade",
+      "role": "Developer",
+      "year": 2025,
+      "result": "12th Graphics / 41st Overall"
+    },
+    {
+      "name": "BulletHellJam",
+      "project": "Glitch in the Grid",
+      "role": "Developer",
+      "year": 2025,
+      "result": "30th / 300+"
+    },
+    {
+      "name": "Week-long Horror Jam",
+      "project": "Amnesia",
+      "role": "Developer",
+      "year": 2025,
+      "result": "90th / 500+"
+    },
+    {
+      "name": "GMTK Game Jam 2025",
+      "project": "Deep Bound",
+      "role": "Developer",
+      "year": 2025,
+      "result": "Completed"
+    }
   ],
-
   "achievements": [
     {
       "title": "12th in Graphics — Love Game Jam (Knight Spade)",
@@ -461,15 +1245,18 @@
       "year": 2025
     }
   ],
-
   "contact": {
     "github": "https://github.com/HakashiKatake",
     "linkedin": "https://www.linkedin.com/in/saurabh-yadav-925a7527a",
-    "email": "saurabh@gamedev.com"
+    "email": "saurabhyadav9850@gmail.com",
+    "website": "https://stopwatchgames.com",
+    "itch": "https://hakashi-katake.itch.io"
   },
-
-  "favoriteGames": ["Celeste", "Hollow Knight", "Journey"],
-
+  "favoriteGames": [
+    "Celeste",
+    "Hollow Knight",
+    "Journey"
+  ],
   "npcDialogues": {
     "alchemist": [
       "Welcome, adventurer! I'm the Skill Alchemist.",
@@ -491,5 +1278,85 @@
       "He's a game developer from Mumbai.",
       "Check out the terminal at the end to get in touch!"
     ]
-  }
+  },
+  "resumeHighlights": [
+    {
+      "label": "Experience",
+      "value": "2+ years building and shipping games"
+    },
+    {
+      "label": "Performance",
+      "value": "Improved mid-range builds from ~45 FPS to stable 60 FPS"
+    },
+    {
+      "label": "Launch Impact",
+      "value": "Fasteroid reached 1,000+ active users on day one"
+    },
+    {
+      "label": "Studio Role",
+      "value": "Founder & Lead Game Developer at Stopwatch Games"
+    }
+  ],
+  "resumes": [
+    {
+      "label": "Unity Developer Resume",
+      "focus": "Unity gameplay engineering, optimization, and AR/VR simulation work",
+      "url": "/resumes/SaurabhYadav-UnityGameDeveloper.pdf"
+    },
+    {
+      "label": "Game Developer Resume",
+      "focus": "General game development profile for multi-platform production",
+      "url": "/resumes/SaurabhYadav-GameDeveloper.pdf"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Founder & Lead Game Developer",
+      "company": "Stopwatch Games",
+      "period": "Dec 2024 - Present",
+      "location": "Mumbai, India",
+      "bullets": [
+        "Designed and shipped Unity projects spanning core gameplay, player mechanics, level logic, and UI.",
+        "Built modular C# architecture for fast iteration, testing, and post-release feature expansion.",
+        "Managed live mobile and PC builds with performance tuning, bug fixing, and release maintenance."
+      ]
+    },
+    {
+      "role": "Unity Developer Intern",
+      "company": "Vyorius",
+      "period": "Oct 2024 - Jan 2025",
+      "location": "Remote",
+      "bullets": [
+        "Integrated AR/VR simulation features in Unity with focus on interaction quality and runtime stability.",
+        "Optimized gameplay systems and scenes; improved average performance from ~45 FPS to stable 60 FPS on mid-range devices.",
+        "Collaborated with designers and artists to debug issues and refine in-game interaction loops."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Computer Science for Game Development",
+      "issuer": "Harvard University (Coursera)"
+    },
+    {
+      "title": "Unity Game Development Course",
+      "issuer": "Udemy"
+    },
+    {
+      "title": "Unity Game Developer Associate",
+      "issuer": "Unity"
+    },
+    {
+      "title": "Unreal Engine C++ Developer",
+      "issuer": "Udemy",
+      "status": "In Progress"
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech in Computer Science & Engineering",
+      "institution": "ITM Skills University, Mumbai",
+      "expected": "Expected 2028"
+    }
+  ]
 }

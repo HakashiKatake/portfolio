@@ -1,79 +1,103 @@
-import { Button, Card, Input, TextArea } from "pixel-retroui";
+import { Card } from "pixel-retroui";
 import PageIntro from "@/components/simple-site/PageIntro";
 import RetroLinkButton from "@/components/simple-site/RetroLinkButton";
+import Reveal from "@/components/simple-site/Reveal";
+import ContactForm from "@/components/simple-site/ContactForm";
 import { getPortfolioData } from "@/data/loader";
-import { RETRO_CARD_PROPS, RETRO_THEME } from "@/components/simple-site/theme";
+import { RETRO_CARD_PROPS } from "@/components/simple-site/theme";
 
 export default function ContactPage() {
   const data = getPortfolioData();
+  const resumes = data.resumes ?? [];
+  const focusRows = (data.skills ?? []).slice(0, 4).map((skill) => ({
+    label: skill.name,
+    value: skill.description ?? skill.level,
+  }));
 
   return (
     <div>
       <PageIntro
         label="Contact"
         title="Open for game development collaboration"
-        summary="Reach out for freelance work, studio collaboration, jam teams, or technical discussions around gameplay systems."
-        aside={<p>Best response channel: email. You can also connect via LinkedIn and GitHub links below.</p>}
+        summary="Reach out for Unity gameplay programming, optimization passes, game jam collaborations, or prototype-to-release support."
+        aside={
+          <div className="simple-timeline">
+            <p>Best response channel: email.</p>
+            {data.contact.website ? <p>Studio: {data.contact.website}</p> : null}
+          </div>
+        }
       />
 
       <section className="simple-section simple-two-col">
-        <Card {...RETRO_CARD_PROPS} className="simple-retro-card">
-          <div className="simple-card-content">
-            <h2 className="simple-section-title">Send a Message</h2>
-            <div className="simple-form-grid">
-              <Input
-                placeholder="Your name"
-                bg={RETRO_THEME.panelAlt}
-                textColor={RETRO_THEME.text}
-                borderColor={RETRO_THEME.border}
-                className="simple-retro-input"
-              />
-              <Input
-                type="email"
-                placeholder="Your email"
-                bg={RETRO_THEME.panelAlt}
-                textColor={RETRO_THEME.text}
-                borderColor={RETRO_THEME.border}
-                className="simple-retro-input"
-              />
-              <TextArea
-                placeholder="Tell me about your game, role, or collaboration idea"
-                bg={RETRO_THEME.panelAlt}
-                textColor={RETRO_THEME.text}
-                borderColor={RETRO_THEME.border}
-                className="simple-retro-textarea"
-              />
-              <Button
-                type="button"
-                bg={RETRO_THEME.buttonPrimaryBg}
-                textColor={RETRO_THEME.buttonText}
-                shadow={RETRO_THEME.buttonShadow}
-                borderColor={RETRO_THEME.border}
-                className="simple-retro-button simple-submit-button"
-              >
-                Send Inquiry
-              </Button>
+        <Reveal>
+          <Card {...RETRO_CARD_PROPS} className="simple-retro-card">
+            <div className="simple-card-content">
+              <h2 className="simple-section-title">Send a Message</h2>
+              <ContactForm />
             </div>
-          </div>
-        </Card>
+          </Card>
+        </Reveal>
 
-        <Card {...RETRO_CARD_PROPS} className="simple-retro-card">
-          <div className="simple-card-content">
-            <h2 className="simple-section-title">Direct Channels</h2>
-            <p className="simple-card-text">Email: {data.contact.email}</p>
-            <div className="simple-button-row">
-              <RetroLinkButton href={`mailto:${data.contact.email}`} variant="primary">
-                Email Direct
-              </RetroLinkButton>
-              <RetroLinkButton href={data.contact.linkedin} newTab>
-                LinkedIn
-              </RetroLinkButton>
-              <RetroLinkButton href={data.contact.github} newTab>
-                GitHub
-              </RetroLinkButton>
+        <Reveal delay={0.1}>
+          <Card {...RETRO_CARD_PROPS} className="simple-retro-card">
+            <div className="simple-card-content">
+              <h2 className="simple-section-title">Direct Channels</h2>
+              <p className="simple-card-text">Email: {data.contact.email}</p>
+              <div className="simple-button-row">
+                <RetroLinkButton href={`mailto:${data.contact.email}`} variant="primary">
+                  Email Direct
+                </RetroLinkButton>
+                <RetroLinkButton href={data.contact.linkedin} newTab>
+                  LinkedIn
+                </RetroLinkButton>
+                <RetroLinkButton href={data.contact.github} newTab>
+                  GitHub
+                </RetroLinkButton>
+                {data.contact.itch ? (
+                  <RetroLinkButton href={data.contact.itch} newTab>
+                    Itch.io
+                  </RetroLinkButton>
+                ) : null}
+                {data.contact.website ? (
+                  <RetroLinkButton href={data.contact.website} newTab>
+                    Stopwatch Games
+                  </RetroLinkButton>
+                ) : null}
+              </div>
+
+              {resumes.length ? (
+                <>
+                  <h3 className="simple-kicker">Resumes</h3>
+                  <div className="simple-button-row">
+                    {resumes.map((resume) => (
+                      <RetroLinkButton key={resume.url} href={resume.url} newTab>
+                        {resume.label}
+                      </RetroLinkButton>
+                    ))}
+                  </div>
+                </>
+              ) : null}
             </div>
-          </div>
-        </Card>
+          </Card>
+        </Reveal>
+      </section>
+
+      <section className="simple-section">
+        <Reveal>
+          <Card {...RETRO_CARD_PROPS} className="simple-retro-card">
+            <div className="simple-card-content">
+              <h2 className="simple-section-title">Collaboration Focus</h2>
+              <div className="simple-strip">
+                {focusRows.map((row) => (
+                  <div key={row.label} className="simple-strip-row">
+                    <span>{row.label}</span>
+                    <span>{row.value}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Card>
+        </Reveal>
       </section>
     </div>
   );

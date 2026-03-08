@@ -5,6 +5,7 @@ import { Card } from "pixel-retroui";
 import { notFound } from "next/navigation";
 import PageIntro from "@/components/simple-site/PageIntro";
 import MarkdownBlocks from "@/components/simple-site/MarkdownBlocks";
+import Reveal from "@/components/simple-site/Reveal";
 import RetroLinkButton from "@/components/simple-site/RetroLinkButton";
 import { getPortfolioData } from "@/data/loader";
 import { formatDate, getBlogBySlug, resolveBlogSlug } from "@/lib/simple-site";
@@ -65,33 +66,37 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       />
 
       <section className="simple-section">
-        <Card {...RETRO_CARD_PROPS} className="simple-retro-card">
-          <div className="simple-card-content">
-            <h2 className="simple-section-title">Article</h2>
-            {markdown ? <MarkdownBlocks content={markdown} /> : <p className="simple-section-text">Markdown content not found for this post.</p>}
-          </div>
-        </Card>
+        <Reveal>
+          <Card {...RETRO_CARD_PROPS} className="simple-retro-card">
+            <div className="simple-card-content">
+              <h2 className="simple-section-title">Article</h2>
+              {markdown ? <MarkdownBlocks content={markdown} /> : <p className="simple-section-text">Markdown content not found for this post.</p>}
+            </div>
+          </Card>
+        </Reveal>
       </section>
 
       <section className="simple-section">
-        <Card {...RETRO_CARD_PROPS} className="simple-retro-card">
-          <div className="simple-card-content">
-            <h2 className="simple-section-title">References</h2>
-            <div className="simple-button-row">
-              {blog.linkedin ? (
-                <RetroLinkButton href={blog.linkedin} variant="primary" newTab>
-                  LinkedIn Post
-                </RetroLinkButton>
-              ) : null}
-              {blog.github ? (
-                <RetroLinkButton href={blog.github} newTab>
-                  GitHub Repo
-                </RetroLinkButton>
-              ) : null}
-              {!blog.linkedin && !blog.github ? <p className="simple-section-text">No reference links added.</p> : null}
+        <Reveal delay={0.1}>
+          <Card {...RETRO_CARD_PROPS} className="simple-retro-card">
+            <div className="simple-card-content">
+              <h2 className="simple-section-title">References</h2>
+              <div className="simple-button-row">
+                {blog.linkedin ? (
+                  <RetroLinkButton href={blog.linkedin} variant="primary" newTab>
+                    LinkedIn Post
+                  </RetroLinkButton>
+                ) : null}
+                {blog.github ? (
+                  <RetroLinkButton href={blog.github} newTab>
+                    GitHub Repo
+                  </RetroLinkButton>
+                ) : null}
+                {!blog.linkedin && !blog.github ? <p className="simple-section-text">No reference links added.</p> : null}
+              </div>
             </div>
-          </div>
-        </Card>
+          </Card>
+        </Reveal>
       </section>
     </div>
   );

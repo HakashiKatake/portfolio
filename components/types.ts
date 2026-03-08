@@ -14,6 +14,17 @@ export interface Meta {
   resumeUrl: string;
 }
 
+export interface ResumeLink {
+  label: string;
+  focus?: string;
+  url: string;
+}
+
+export interface ResumeHighlight {
+  label: string;
+  value: string;
+}
+
 export interface Skill {
   name: string;
   level: string;
@@ -43,6 +54,16 @@ export interface Project {
   cover?: string;
   featured?: boolean;
   links?: { play?: string; github?: string; store?: string; linkedin?: string };
+  engagement?: "personal" | "team";
+  teamSize?: number;
+  responsibilities?: string[];
+  learning?: {
+    concepts?: string[];
+    challenges?: string[];
+    mechanics?: string[];
+    lessons?: string[];
+    results?: string[];
+  };
 }
 
 export interface Blog {
@@ -73,6 +94,9 @@ export interface Contact {
   github: string;
   linkedin: string;
   email: string;
+  phone?: string;
+  website?: string;
+  itch?: string;
 }
 
 export interface About {
@@ -88,6 +112,26 @@ export interface NpcDialogues {
   villageLady: string[];
 }
 
+export interface ExperienceItem {
+  role: string;
+  company: string;
+  period: string;
+  location?: string;
+  bullets: string[];
+}
+
+export interface Certification {
+  title: string;
+  issuer?: string;
+  status?: string;
+}
+
+export interface EducationItem {
+  degree: string;
+  institution: string;
+  expected?: string;
+}
+
 export interface PortfolioData {
   meta?: Meta;
   name: string;
@@ -101,4 +145,9 @@ export interface PortfolioData {
   contact: Contact;
   favoriteGames: string[];
   npcDialogues: NpcDialogues;
+  resumes?: ResumeLink[];
+  resumeHighlights?: ResumeHighlight[];
+  experience?: ExperienceItem[];
+  certifications?: Certification[];
+  education?: EducationItem[];
 }
